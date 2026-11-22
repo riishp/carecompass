@@ -3,8 +3,10 @@
 **CareCompass turns "what does the patient need, and where are they?" into a ranked call plan of nearby facilities, with the evidence behind each pick.**
 
 Built for health workers and NGO coordinators in India finding care for a patient.
-Results: confidently wrong location answers fell from 81 to 1 of 1,517 test inputs, and of the top-3 picks we could check against the government directory, 74% were confirmed.
-A Streamlit app that helps a health coordinator in India find care for a patient. You enter what the patient needs and where they are. CareCompass gives back a **call plan**:
+
+**Results:** confidently wrong location answers fell from 81 to 1 of 1,517 test inputs, and of the top-3 picks we could check against the government directory, 74% were confirmed.
+
+It is a Streamlit app. You enter what the patient needs and where they are, and CareCompass gives back a **call plan**:
 
 - three facilities to call, in order, with what to ask each one
 - a government fallback
@@ -32,7 +34,7 @@ Confidently wrong answers fell from 81 to 1. "Correct" fell because typos now ge
 
 Our hand-tuned evidence rules are strict: for C-section they find evidence for only 10% of hospitals the government directory lists, versus 73% for Model 1. We favour fewer, better-supported picks and rely on the call plan and government fallback to cover the gap.
 
-The combined model scores individual facilities best, but the current ranking gives the most practical top 3 because it also weighs distance, so the app ships the current ranking and shows the model labels as signals. Caveats: only ~5% of picks can be checked against the directory, the directory lists coarse departments only, and both models learned from that same directory, so these comparisons are suggestive, not conclusive.
+The combined model scores individual facilities best, but the current ranking gives the most practical top 3 because it also weighs distance, so the app ships the current ranking. The model rankings can be compared in Judge view. Caveats: only ~5% of picks can be checked against the directory, the directory lists coarse departments only, and both models learned from that same directory, so these comparisons are suggestive, not conclusive.
 
 ## What we recommend to Virtue Foundation
 
@@ -81,17 +83,10 @@ DATABRICKS_CONFIG_PROFILE=datathon DATABRICKS_WAREHOUSE_ID=<sql-warehouse-id> .v
 - Under 5% of picks can be checked against the government directory.
 - Hindi template text is machine-translated.
 
-  ## Team
-
-- **<Name>**: <role, e.g. data cleaning and location pipeline>
-- **<Name>**: <role, e.g. service evidence and recommendation engine>
-- **<Name>**: <role, e.g. Models 1 and 2, evaluation>
-- **<Name>**: <role, e.g. app and deployment>
-
 ## Notes
 
 - **Where to edit the engine:** `engine/recommend_engine.py` is generated from `notebooks/06_recommend.py`. Edit the notebook, not the generated file.
 - **Facility data is self-reported** and may be wrong. Always confirm by phone before a patient travels.
-- - **App tabs:** The app opens on Find care. Turn on the **Judge view** toggle (top-right) to see why other facilities were left out, how the ranking was decided, and the Model 1 / Model 2 / Combined comparison tabs.
+- **App tabs:** The app opens on Find care. Turn on the **Judge view** toggle (top-right) to see why other facilities were left out, how the ranking was decided, and the Model 1 / Model 2 / Combined comparison tabs.
 - **Notebooks:** `notebooks/` holds every notebook the pipeline (`00_Full_Cleaning_Pipeline` and its 8 steps), the engine (`03b`, `04`, `05`, `06_recommend`, `09b`) and the models (`model1_evidence_levels.py`, `model1_all_services.py`, `model2_facility_capability.py`) depend on. Not included: the government-directory matching step, which a teammate did outside the workspace (`09b_Gold_Verified` reads its output CSV, `gold_facility_search_directory_verified.csv`), and exploratory notebooks the app doesn't use (`01_Verify_Virtue_Dataset`, `02_Facilities_EDA`). `06_07_Recommend_Google_Driving_Combined.py` (recommendation with Google driving times; in progress, not used by the app yet) is included; it reads the Google Maps key from `GOOGLE_MAPS_API_KEY` or a Databricks secret.
 - **Demo phone number:** if `config/demo_phone.local.json` exists (it is gitignored), every "Call first" shows its number, labelled "Demo number". Otherwise the app reads `config/demo_phone.json`, which is off, and shows real numbers from the data.
