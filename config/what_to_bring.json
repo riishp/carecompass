@@ -1,0 +1,27 @@
+{
+ "_default": [
+  {"en": "Aadhaar card or any photo ID", "hi": "आधार कार्ड या कोई भी फ़ोटो पहचान पत्र"},
+  {"en": "Ayushman Bharat (PM-JAY) card, if you have one", "hi": "आयुष्मान भारत (PM-JAY) कार्ड, अगर हो"},
+  {"en": "All earlier reports, scans and prescriptions", "hi": "पहले की सभी रिपोर्ट, स्कैन और पर्चे"},
+  {"en": "List of medicines the patient takes now", "hi": "मरीज़ अभी जो दवाइयाँ लेते हैं उनकी सूची"}
+ ],
+ "_emergency": [
+  {"en": "A family member's phone number", "hi": "परिवार के किसी सदस्य का फ़ोन नंबर"}
+ ],
+ "xray": [{"en": "Any earlier X-rays", "hi": "पहले के कोई भी एक्स-रे"}],
+ "fracture_treatment": [{"en": "Any earlier X-rays", "hi": "पहले के कोई भी एक्स-रे"}],
+ "ortho_surgery": [{"en": "Any earlier X-rays or MRI reports", "hi": "पहले के कोई भी एक्स-रे या एमआरआई रिपोर्ट"}],
+ "normal_delivery": [{"en": "Mother and Child Protection (MCP) card", "hi": "मातृ एवं शिशु सुरक्षा (MCP) कार्ड"}, {"en": "Earlier ultrasound reports", "hi": "पहले की अल्ट्रासाउंड रिपोर्ट"}],
+ "c_section": [{"en": "Mother and Child Protection (MCP) card", "hi": "मातृ एवं शिशु सुरक्षा (MCP) कार्ड"}, {"en": "Earlier ultrasound reports", "hi": "पहले की अल्ट्रासाउंड रिपोर्ट"}],
+ "nicu": [{"en": "Baby's birth or discharge papers", "hi": "बच्चे के जन्म या छुट्टी के कागज़"}],
+ "paediatrics": [{"en": "Child's vaccination card", "hi": "बच्चे का टीकाकरण कार्ड"}],
+ "dialysis": [{"en": "Earlier dialysis records and latest blood reports", "hi": "पहले के डायलिसिस रिकॉर्ड और ताज़ा ब्लड रिपोर्ट"}],
+ "ecg": [{"en": "Earlier ECG or echo reports", "hi": "पहले की ईसीजी या इको रिपोर्ट"}],
+ "echo": [{"en": "Earlier ECG or echo reports", "hi": "पहले की ईसीजी या इको रिपोर्ट"}],
+ "cath_lab": [{"en": "Earlier ECG or echo reports", "hi": "पहले की ईसीजी या इको रिपोर्ट"}],
+ "cardiac_surgery": [{"en": "Earlier ECG, echo and angiography reports", "hi": "पहले की ईसीजी, इको और एंजियोग्राफ़ी रिपोर्ट"}],
+ "chemotherapy": [{"en": "Biopsy report and treatment records", "hi": "बायोप्सी रिपोर्ट और इलाज के रिकॉर्ड"}],
+ "radiotherapy": [{"en": "Biopsy report and treatment records", "hi": "बायोप्सी रिपोर्ट और इलाज के रिकॉर्ड"}],
+ "blood_bank": [{"en": "Blood group card, if available", "hi": "ब्लड ग्रुप कार्ड, अगर हो"}],
+ "lab_tests": [{"en": "The doctor's test request slip", "hi": "डॉक्टर की जाँच वाली पर्ची"}]
+}

@@ -1,0 +1,101 @@
+{
+ "dialysis": {
+  "checklist": "Is the dialysis unit running this week? How many machines? Walk-in or referral only? Cost per session?"
+ },
+ "peritoneal_dialysis": {
+  "checklist": "Do you start and follow up peritoneal dialysis (CAPD) patients? Is a nephrologist on staff?"
+ },
+ "icu": {
+  "checklist": "How many ICU beds, and are any free now? Is there a doctor in the ICU at night? Ventilators?"
+ },
+ "nicu": {
+  "checklist": "What NICU level? Can you take a baby under 1.5 kg? Is a neonatologist or paediatrician there 24 hours?"
+ },
+ "picu": {
+  "checklist": "Do you admit children to an intensive care unit? Paediatric ventilators?"
+ },
+ "c_section": {
+  "checklist": "Can you do an emergency C-section at night? Is an anaesthetist available 24 hours? Blood on site?"
+ },
+ "cardiac_surgery": {
+  "checklist": "Which heart operations were done here in the last month? Is the cardiac surgeon on staff or visiting?"
+ },
+ "cath_lab_angioplasty": {
+  "checklist": "Is the cath lab open 24 hours for heart attacks? Is the interventional cardiologist on staff?"
+ },
+ "mri": {
+  "checklist": "Is the MRI working today? Waiting time? Is a radiologist reporting on site?"
+ },
+ "pet_ct": {
+  "checklist": "Is the PET-CT working? Which scans (FDG, PSMA)? Waiting time?"
+ },
+ "ct_scan": {
+  "checklist": "Is the CT scanner working now? Open at night? How fast is the report?"
+ },
+ "trauma_center": {
+  "checklist": "Do you take road-accident patients 24 hours? Is a surgeon and an orthopaedic surgeon there at night? CT on site?"
+ },
+ "emergency_24x7": {
+  "checklist": "Is a doctor in the emergency room at night? Do you have an ambulance?"
+ },
+ "burn_care": {
+  "checklist": "Do you admit burn patients? Is there a burns ward or ICU? Plastic surgeon on staff?"
+ },
+ "chemotherapy": {
+  "checklist": "Is a medical oncologist on staff? Can treatment start this week? Day-care chairs?"
+ },
+ "radiotherapy": {
+  "checklist": "Which radiotherapy machine is working? Waiting list length? Radiation oncologist on staff?"
+ },
+ "blood_bank": {
+  "checklist": "Is the blood bank on site and licensed? Is the needed blood group usually in stock?"
+ },
+ "ventilator": {
+  "checklist": "How many ventilators, and are any free now? Who manages ventilated patients at night?"
+ },
+ "xray": {
+  "checklist": "Is the X-ray machine working today? Can you X-ray an injury without an appointment?"
+ },
+ "ultrasound": {
+  "checklist": "Is the ultrasound available today, and is a radiologist or sonologist present?"
+ },
+ "cardiac_diagnostics": {
+  "checklist": "Can you do an ECG (or echo) today, and is a doctor available to read it?"
+ },
+ "orthopedic_surgery": {
+  "checklist": "Is an orthopaedic surgeon available? Can you X-ray and plaster on site? Operation theatre for bones?"
+ },
+ "maternity": {
+  "checklist": "Is a gynaecologist or midwife available now? Is the labour room open 24 hours?"
+ },
+ "eye_care": {
+  "checklist": "When is the next cataract surgery day? Is it free or covered by a scheme?"
+ },
+ "ambulance": {
+  "checklist": "Can you send an ambulance now, and how long will it take?"
+ },
+ "physiotherapy_rehab": {
+  "checklist": "Is a physiotherapist available, and on which days? What does a session cost?"
+ },
+ "ent": {
+  "checklist": "Is an ENT doctor available, and when? Do you do hearing tests on site?"
+ },
+ "dermatology": {
+  "checklist": "Is a skin doctor (dermatologist) available, and when?"
+ },
+ "psychiatry": {
+  "checklist": "Is a psychiatrist or counsellor available, and when? Do you see patients without an appointment?"
+ },
+ "lab_pathology": {
+  "checklist": "Can you do this test today, and when are results ready? Do I need to come fasting?"
+ },
+ "pediatrics": {
+  "checklist": "Is a child specialist available today? What are the OPD timings?"
+ },
+ "dental": {
+  "checklist": "Is a dentist available today? Do you do dental X-rays on site?"
+ },
+ "anti_venom": {
+  "checklist": "Do you have anti-snake venom (ASV) in stock right now? Is a doctor available to give it now?"
+ }
+}

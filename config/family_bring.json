@@ -1,0 +1,24 @@
+{
+ "_default": [
+  {"en": "Aadhaar or any photo ID", "hi": "आधार या कोई भी फ़ोटो पहचान पत्र"},
+  {"en": "Ayushman Bharat or insurance card", "hi": "आयुष्मान भारत या बीमा कार्ड"},
+  {"en": "earlier reports and prescriptions", "hi": "पहले की रिपोर्ट और पर्चे"},
+  {"en": "the patient's current medicines", "hi": "मरीज़ की अभी की दवाइयाँ"},
+  {"en": "some money", "hi": "कुछ पैसे"},
+  {"en": "phone and charger", "hi": "फ़ोन और चार्जर"},
+  {"en": "a change of clothes", "hi": "एक जोड़ी कपड़े"}
+ ],
+ "_groups": {
+  "delivery": ["normal_delivery", "c_section"],
+  "surgery": ["ortho_surgery", "fracture_treatment", "cardiac_surgery", "cath_lab", "cataract_surgery", "c_section"]
+ },
+ "delivery": [
+  {"en": "MCP (mother and child) card", "hi": "MCP (माँ और बच्चा) कार्ड"},
+  {"en": "clothes and a blanket for the baby", "hi": "बच्चे के लिए कपड़े और कंबल"},
+  {"en": "sanitary pads", "hi": "सैनिटरी पैड"}
+ ],
+ "surgery": [
+  {"en": "a family member who can stay and sign forms", "hi": "परिवार का कोई सदस्य जो साथ रुक सके और फ़ॉर्म पर दस्तख़त कर सके"},
+  {"en": "blood group card, if you have one", "hi": "ब्लड ग्रुप कार्ड, अगर हो"}
+ ]
+}

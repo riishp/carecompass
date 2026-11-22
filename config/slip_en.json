@@ -1,0 +1,30 @@
+{
+ "title": "CareCompass referral slip",
+ "need": "Need",
+ "from_words": "(from \"{typed}\")",
+ "near": "Near",
+ "call_order": "Call in this order — confirm before going:",
+ "phone": "Phone",
+ "no_phone": "No phone number listed",
+ "by_car": "about {min} min by car",
+ "confirm": "confirm before going",
+ "if_none": "If none can help:",
+ "govt_note": "government, usually free; confirm on the call",
+ "no_govt": "No government hospital found in our data within {km} km. In an emergency, call 108.",
+ "bring": "Bring:",
+ "emergency": "If the patient gets worse, call 108 now.",
+ "footer": "Services are self-reported. Always call before travelling.",
+ "by_car_short": "under 5 min by car",
+ "family": {
+  "title": "CareCompass: please take the patient to",
+  "map": "Map",
+  "need": "For",
+  "confirmed_yes": "✅ The hospital confirmed by phone that they can help.",
+  "confirmed_no": "⏳ Not confirmed yet — wait for the health worker's call before travelling.",
+  "hospital_phone": "Hospital phone",
+  "please_bring": "Please bring",
+  "emergency": "🚑 If the patient gets worse, call 108 now.",
+  "sent_by": "Sent by {sender} via CareCompass. Services are self-reported.",
+  "sent_anon": "Sent via CareCompass. Services are self-reported."
+ }
+}

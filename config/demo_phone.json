@@ -1,0 +1,6 @@
+{
+ "_note": "DEMO ONLY. When enabled, the 'Call first' facility in every search shows this number (Call button, call plan, slip). Keep enabled false to use the real numbers from the data.",
+ "enabled": false,
+ "phone_display": "",
+ "tel": ""
+}

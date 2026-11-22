@@ -1,0 +1,10 @@
+streamlit==1.67.0
+pandas
+numpy
+pyarrow
+pydeck==0.9.3
+certifi
+databricks-sql-connector
+databricks-sdk
+databricks-connect==16.1.7
+streamlit-searchbox==0.1.24

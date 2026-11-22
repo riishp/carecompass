@@ -1,0 +1,56 @@
+{
+ "correct": {
+  "alias": 2,
+  "district": 716,
+  "pin": 195,
+  "state": 1,
+  "town_state": 122,
+  "typo": 273,
+  "total": 1309
+ },
+ "clarified": {
+  "alias": 1,
+  "district": 5,
+  "pin": 0,
+  "state": 2,
+  "town_state": 1,
+  "typo": 1,
+  "total": 10
+ },
+ "wrong": {
+  "alias": 14,
+  "district": 18,
+  "pin": 5,
+  "state": 11,
+  "town_state": 25,
+  "typo": 8,
+  "total": 81
+ },
+ "not_found": {
+  "alias": 12,
+  "district": 1,
+  "pin": 0,
+  "state": 43,
+  "town_state": 52,
+  "typo": 9,
+  "total": 117
+ },
+ "error": {
+  "alias": 0,
+  "district": 0,
+  "pin": 0,
+  "state": 0,
+  "town_state": 0,
+  "typo": 0,
+  "total": 0
+ },
+ "total": {
+  "alias": 29,
+  "district": 740,
+  "pin": 200,
+  "state": 57,
+  "town_state": 200,
+  "typo": 291,
+  "total": 1517
+ }
+}
