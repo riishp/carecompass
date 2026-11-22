@@ -4,7 +4,7 @@
 
 Built for health workers and NGO coordinators in India finding care for a patient.
 
-**Results:** confidently wrong location answers fell from 81 to 1 of 1,517 test inputs, and of the top-3 picks we could check against the government directory, 74% were confirmed.
+**Results:** confidently wrong location answers fell from 81 to 1 of 1,517 test inputs, and of the top-3 picks we could check against the government directory, 70% were confirmed.
 
 It is a Streamlit app. You enter what the patient needs and where they are, and CareCompass gives back a **call plan**:
 
@@ -30,7 +30,7 @@ Confidently wrong answers fell from 81 to 1. "Correct" fell because typos now ge
 
 **Scoring facilities** (`tests/model_eval.py`, 241 hospitals matched to the government directory × 27 services, average AUC, 0.5 = coin flip): Current 0.60 · Model 1 0.62 · Model 2 0.66 · Combined 0.67.
 
-**The top 3 users see** (`tests/model_eval_top3.py`, 40 random districts × 10 services; share of checkable picks the government directory confirms): Current **74%** (39/53) · Model 1 57% (30/53) · Model 2 59% (44/75) · Combined 60% (46/77).
+**The top 3 users see** (`tests/model_eval_top3.py`, 40 random districts × 10 services; share of checkable picks the government directory confirms): Current **70%** (43/61) · Model 1 57% (30/53) · Model 2 59% (44/75) · Combined 60% (46/77).
 
 Our hand-tuned evidence rules are strict: for C-section they find evidence for only 10% of hospitals the government directory lists, versus 73% for Model 1. We favour fewer, better-supported picks and rely on the call plan and government fallback to cover the gap.
 

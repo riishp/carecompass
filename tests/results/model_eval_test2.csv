@@ -15,7 +15,9 @@ Combined,VALSAD,xray,546b1600-c198-42de-a1b8-fdaebdeab448,84.95465698465628,Fals
 Combined,VALSAD,xray,e60b7a92-d658-433c-8a98-d96651ee3b70,85.18025075241002,False,False,,
 Combined,VALSAD,xray,5ed31c9d-d537-4d91-ade6-b2fcb485fa97,91.34350168709747,False,False,,
 Combined,VALSAD,xray,,,False,False,True,3.0
-Current (Find care),VALSAD,ultrasound,,,False,False,True,0.0
+Current (Find care),VALSAD,ultrasound,cc6e3a1f-3e55-40a7-b2c5-52126cf112fe,7.6,False,False,,
+Current (Find care),VALSAD,ultrasound,d1beeaa6-d7a0-4170-9fa5-c306b5754e64,5.0,False,False,,
+Current (Find care),VALSAD,ultrasound,,,False,False,True,2.0
 Model 1,VALSAD,ultrasound,d1beeaa6-d7a0-4170-9fa5-c306b5754e64,4.961431401987929,False,False,,
 Model 1,VALSAD,ultrasound,cc6e3a1f-3e55-40a7-b2c5-52126cf112fe,7.572863529138176,False,False,,
 Model 1,VALSAD,ultrasound,0674e48a-8d60-4853-bbb0-16e379b74a81,11.663322923284277,False,False,,
@@ -110,7 +112,7 @@ Combined,VALSAD,icu,546b1600-c198-42de-a1b8-fdaebdeab448,84.95465698465628,False
 Combined,VALSAD,icu,,,False,False,True,3.0
 Current (Find care),VALSAD,emergency_247,73ee207c-d831-446d-869d-bda0fb02efb0,7.3,False,False,,
 Current (Find care),VALSAD,emergency_247,4c94dfcb-fe8d-4595-86db-dc83b82c6e85,21.1,False,False,,
-Current (Find care),VALSAD,emergency_247,c9018fa1-e15d-4a84-b8bf-f1d5b0eb7b64,94.7,False,False,,
+Current (Find care),VALSAD,emergency_247,8bc65902-655e-49a6-889c-2b5060994db5,82.5,False,False,,
 Current (Find care),VALSAD,emergency_247,,,False,False,True,3.0
 Model 1,VALSAD,emergency_247,d5b31e2d-701b-4da2-baca-408742204772,77.2520018581865,False,False,,
 Model 1,VALSAD,emergency_247,00fd1dbd-dc4d-47ea-9ffa-68ddf7e5d13f,81.78767910712097,False,False,,
@@ -124,7 +126,10 @@ Combined,VALSAD,emergency_247,d5b31e2d-701b-4da2-baca-408742204772,77.2520018581
 Combined,VALSAD,emergency_247,5470d3af-8f86-4110-a038-434b625a6eea,82.48904619936917,False,False,,
 Combined,VALSAD,emergency_247,00fd1dbd-dc4d-47ea-9ffa-68ddf7e5d13f,81.78767910712097,False,False,,
 Combined,VALSAD,emergency_247,,,False,False,True,3.0
-Current (Find care),VALSAD,cath_lab,,,False,False,True,0.0
+Current (Find care),VALSAD,cath_lab,cc6e3a1f-3e55-40a7-b2c5-52126cf112fe,7.6,False,False,,
+Current (Find care),VALSAD,cath_lab,00fd1dbd-dc4d-47ea-9ffa-68ddf7e5d13f,81.8,False,False,,
+Current (Find care),VALSAD,cath_lab,d26b8c99-b2fa-443a-b9fd-81292068482e,83.3,False,False,,
+Current (Find care),VALSAD,cath_lab,,,False,False,True,3.0
 Model 1,VALSAD,cath_lab,00fd1dbd-dc4d-47ea-9ffa-68ddf7e5d13f,81.78767910712097,False,False,,
 Model 1,VALSAD,cath_lab,d26b8c99-b2fa-443a-b9fd-81292068482e,83.26656981301026,False,False,,
 Model 1,VALSAD,cath_lab,18aca974-cadb-4c0f-a4e1-efde9710c729,84.2871885046603,False,False,,
@@ -153,7 +158,10 @@ Combined,VALSAD,ent,5ed31c9d-d537-4d91-ade6-b2fcb485fa97,91.34350168709747,False
 Combined,VALSAD,ent,1a2a830d-0904-4df0-8ffa-755402c6c05b,93.51788139891543,False,False,,
 Combined,VALSAD,ent,a9496e1c-08f5-4381-b0ff-51e259a6ccb2,96.64479126977271,False,False,,
 Combined,VALSAD,ent,,,False,False,True,3.0
-Current (Find care),SATARA,xray,,,False,False,True,0.0
+Current (Find care),SATARA,xray,ff9a75d2-54fb-4673-be01-e3e7f8af08c5,9.1,False,False,,
+Current (Find care),SATARA,xray,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.2,False,False,,
+Current (Find care),SATARA,xray,5b4b5514-981e-4e69-bcf0-05d0398472ba,96.1,True,False,,
+Current (Find care),SATARA,xray,,,False,False,True,3.0
 Model 1,SATARA,xray,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.243416582413424,False,False,,
 Model 1,SATARA,xray,6f6a8739-64b1-4958-924a-cb9a0a743163,35.76400961748001,False,False,,
 Model 1,SATARA,xray,0647e0c0-cc39-4f07-8e37-04fc846faa65,87.96298980454449,False,False,,
@@ -166,7 +174,10 @@ Combined,SATARA,xray,5b4b5514-981e-4e69-bcf0-05d0398472ba,96.07459729265368,True
 Combined,SATARA,xray,8619b7eb-7f9d-45d1-8bd5-d3687a61f616,96.66838372664913,False,False,,
 Combined,SATARA,xray,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.243416582413424,False,False,,
 Combined,SATARA,xray,,,False,False,True,3.0
-Current (Find care),SATARA,ultrasound,,,False,False,True,0.0
+Current (Find care),SATARA,ultrasound,35b23454-9c94-421e-8471-38ee9c582725,7.9,False,False,,
+Current (Find care),SATARA,ultrasound,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.2,False,False,,
+Current (Find care),SATARA,ultrasound,67646cb8-d586-45fe-9a91-8b0ba8838d6b,94.7,False,False,,
+Current (Find care),SATARA,ultrasound,,,False,False,True,3.0
 Model 1,SATARA,ultrasound,35b23454-9c94-421e-8471-38ee9c582725,7.9216328341500235,False,False,,
 Model 1,SATARA,ultrasound,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.243416582413424,False,False,,
 Model 1,SATARA,ultrasound,895db286-ca63-4b15-8593-1d93f390f95d,45.690472471295294,False,False,,
@@ -195,7 +206,10 @@ Combined,SATARA,ct_scan,5b4b5514-981e-4e69-bcf0-05d0398472ba,96.07459729265368,T
 Combined,SATARA,ct_scan,7095bd13-3e12-470a-aa29-702a03e79edb,11.177904474398403,False,False,,
 Combined,SATARA,ct_scan,895db286-ca63-4b15-8593-1d93f390f95d,45.690472471295294,False,False,,
 Combined,SATARA,ct_scan,,,False,False,True,3.0
-Current (Find care),SATARA,dialysis,,,False,False,True,0.0
+Current (Find care),SATARA,dialysis,ff9a75d2-54fb-4673-be01-e3e7f8af08c5,9.1,False,False,,
+Current (Find care),SATARA,dialysis,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.2,False,False,,
+Current (Find care),SATARA,dialysis,5ef1d061-efbf-4cba-a726-636c486b1aaa,96.9,False,False,,
+Current (Find care),SATARA,dialysis,,,False,False,True,3.0
 Model 1,SATARA,dialysis,ff9a75d2-54fb-4673-be01-e3e7f8af08c5,9.058242329695986,False,False,,
 Model 1,SATARA,dialysis,895db286-ca63-4b15-8593-1d93f390f95d,45.690472471295294,False,False,,
 Model 1,SATARA,dialysis,c9be0d16-3852-4f77-b251-0515749878b9,88.32504121965867,False,False,,
@@ -240,7 +254,10 @@ Combined,SATARA,nicu,895db286-ca63-4b15-8593-1d93f390f95d,45.690472471295294,Fal
 Combined,SATARA,nicu,aa4e0ded-d7bb-4fb4-ae1b-0b76c0a60daa,92.65802106573493,True,False,,
 Combined,SATARA,nicu,14327a60-299d-47b9-a7e1-ea015de67dea,95.02140933494846,True,False,,
 Combined,SATARA,nicu,,,False,False,True,3.0
-Current (Find care),SATARA,icu,,,False,False,True,0.0
+Current (Find care),SATARA,icu,35b23454-9c94-421e-8471-38ee9c582725,7.9,False,False,,
+Current (Find care),SATARA,icu,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.2,False,False,,
+Current (Find care),SATARA,icu,7b71adc1-9169-499c-9eef-161d7460972c,95.0,True,True,,
+Current (Find care),SATARA,icu,,,False,False,True,3.0
 Model 1,SATARA,icu,f44c2605-94ec-4e5a-a262-5ee33da0a974,89.1029101161671,False,False,,
 Model 1,SATARA,icu,b295e423-5150-4ddb-ac48-86e5a01e2d15,90.99158715479132,False,False,,
 Model 1,SATARA,icu,23262e3f-4604-4f04-bda8-611cd34dae36,93.08452413769828,False,False,,
@@ -253,7 +270,10 @@ Combined,SATARA,icu,5ef1d061-efbf-4cba-a726-636c486b1aaa,96.89187145829789,False
 Combined,SATARA,icu,8619b7eb-7f9d-45d1-8bd5-d3687a61f616,96.66838372664913,False,False,,
 Combined,SATARA,icu,9433ea25-31af-43a2-8512-e07d58b2d269,89.07539900972137,False,False,,
 Combined,SATARA,icu,,,False,False,True,3.0
-Current (Find care),SATARA,emergency_247,,,False,False,True,0.0
+Current (Find care),SATARA,emergency_247,35b23454-9c94-421e-8471-38ee9c582725,7.9,False,False,,
+Current (Find care),SATARA,emergency_247,ff9a75d2-54fb-4673-be01-e3e7f8af08c5,9.1,False,False,,
+Current (Find care),SATARA,emergency_247,2837ced6-57ec-4e44-9981-1dbf713634a8,93.8,False,False,,
+Current (Find care),SATARA,emergency_247,,,False,False,True,3.0
 Model 1,SATARA,emergency_247,58268a2b-0a9d-4c78-b6af-817ff3b86ec9,36.243416582413424,False,False,,
 Model 1,SATARA,emergency_247,b15f662d-8fc7-4fae-aa4b-7155e61c2ffa,89.44702753989823,False,False,,
 Model 1,SATARA,emergency_247,4d84a19a-f11f-4669-bbc5-6bd4117dbc6d,89.61891782862979,False,False,,
@@ -545,9 +565,9 @@ Combined,ALMORA,nicu,9cace831-374b-48b5-9a93-b69f1b38cc93,46.17412179354965,Fals
 Combined,ALMORA,nicu,7fea71eb-1e73-4c9b-8723-0621aad3deb9,71.00693586456251,False,False,,
 Combined,ALMORA,nicu,0d9c1629-aa77-4b85-b2e3-e8173ff26e2c,77.16444965830811,False,False,,
 Combined,ALMORA,nicu,,,False,False,True,3.0
-Current (Find care),ALMORA,icu,f0c57e76-988c-42b9-97e2-f928cc0934bf,46.8,False,False,,
 Current (Find care),ALMORA,icu,0fc162e1-e0e7-4f0f-aac5-248ca262b879,16.0,False,False,,
-Current (Find care),ALMORA,icu,fd229668-492e-4dcd-a615-f97049b732dd,48.6,False,False,,
+Current (Find care),ALMORA,icu,9cace831-374b-48b5-9a93-b69f1b38cc93,46.2,False,False,,
+Current (Find care),ALMORA,icu,f0c57e76-988c-42b9-97e2-f928cc0934bf,46.8,False,False,,
 Current (Find care),ALMORA,icu,,,False,False,True,3.0
 Model 1,ALMORA,icu,f0c57e76-988c-42b9-97e2-f928cc0934bf,46.827661384288525,False,False,,
 Model 1,ALMORA,icu,d4d2acd5-28e3-4991-82ed-68d46ad1f1ff,47.01329045318706,False,False,,
@@ -561,9 +581,9 @@ Combined,ALMORA,icu,0d9c1629-aa77-4b85-b2e3-e8173ff26e2c,77.16444965830811,False
 Combined,ALMORA,icu,f0c57e76-988c-42b9-97e2-f928cc0934bf,46.827661384288525,False,False,,
 Combined,ALMORA,icu,d4d2acd5-28e3-4991-82ed-68d46ad1f1ff,47.01329045318706,False,False,,
 Combined,ALMORA,icu,,,False,False,True,3.0
-Current (Find care),ALMORA,emergency_247,f0c57e76-988c-42b9-97e2-f928cc0934bf,46.8,False,False,,
 Current (Find care),ALMORA,emergency_247,0fc162e1-e0e7-4f0f-aac5-248ca262b879,16.0,False,False,,
-Current (Find care),ALMORA,emergency_247,fd229668-492e-4dcd-a615-f97049b732dd,48.6,False,False,,
+Current (Find care),ALMORA,emergency_247,5a84bba7-ae11-4649-8b54-033a137543e3,45.5,False,False,,
+Current (Find care),ALMORA,emergency_247,f0c57e76-988c-42b9-97e2-f928cc0934bf,46.8,False,False,,
 Current (Find care),ALMORA,emergency_247,,,False,False,True,3.0
 Model 1,ALMORA,emergency_247,804cd688-8484-4c54-84ee-3ac6d1d27ab2,76.37252626600863,False,False,,
 Model 1,ALMORA,emergency_247,0fc162e1-e0e7-4f0f-aac5-248ca262b879,16.031056622732038,False,False,,
@@ -691,7 +711,7 @@ Combined,BANSWARA,c_section,0b264fcd-973a-4635-94c0-c35c4e637a17,182.69166593534
 Combined,BANSWARA,c_section,,,False,False,True,3.0
 Current (Find care),BANSWARA,nicu,1ec90a4b-3757-40ec-af97-33985fcc5996,134.7,False,False,,
 Current (Find care),BANSWARA,nicu,251ab2f9-4d16-4c7b-9080-9ffe02697c3a,116.1,False,False,,
-Current (Find care),BANSWARA,nicu,7b747b2b-b52d-467e-a808-f24dcc0cf257,143.8,False,False,,
+Current (Find care),BANSWARA,nicu,f82e9a66-86df-4f4b-9f20-af9e18462d20,134.3,False,False,,
 Current (Find care),BANSWARA,nicu,,,False,False,True,3.0
 Model 1,BANSWARA,nicu,f82e9a66-86df-4f4b-9f20-af9e18462d20,134.34932137470233,False,False,,
 Model 1,BANSWARA,nicu,251ab2f9-4d16-4c7b-9080-9ffe02697c3a,116.08652832596785,False,False,,
@@ -753,9 +773,9 @@ Combined,BANSWARA,cath_lab,2ddff85e-9595-4a6b-b738-005cf9369bd0,178.534087308736
 Combined,BANSWARA,cath_lab,3408ec7c-0faf-43a6-a150-0bf197aadb23,181.08574462374756,False,False,,
 Combined,BANSWARA,cath_lab,21281665-02c3-4401-90c4-49d7626ec24e,183.8339323204515,False,False,,
 Combined,BANSWARA,cath_lab,,,False,False,True,3.0
-Current (Find care),BANSWARA,ent,cd2947f1-64e1-4a85-ba4a-1231895f1382,140.6,False,False,,
-Current (Find care),BANSWARA,ent,96b30900-ae6c-45d7-80c0-791ffbbff6ce,76.4,False,False,,
 Current (Find care),BANSWARA,ent,1ec90a4b-3757-40ec-af97-33985fcc5996,134.7,False,False,,
+Current (Find care),BANSWARA,ent,96b30900-ae6c-45d7-80c0-791ffbbff6ce,76.4,False,False,,
+Current (Find care),BANSWARA,ent,cd2947f1-64e1-4a85-ba4a-1231895f1382,140.6,False,False,,
 Current (Find care),BANSWARA,ent,,,False,False,True,3.0
 Model 1,BANSWARA,ent,547771ae-6641-4286-8e95-d2f47dba1b31,130.02886130579463,False,False,,
 Model 1,BANSWARA,ent,66f082f1-185a-4521-b5c6-d997aef5fef1,130.91851832578752,False,False,,
@@ -817,9 +837,9 @@ Combined,AYODHYA,ct_scan,4e3a5fb5-df76-4d34-81bd-b3448a372f48,119.87609957907965
 Combined,AYODHYA,ct_scan,328e0055-5900-4378-8fb7-bf9cd100764c,69.31028626676299,False,False,,
 Combined,AYODHYA,ct_scan,d4066f5a-ad1f-48b9-92cf-6b32431939a8,110.82230068823888,False,False,,
 Combined,AYODHYA,ct_scan,,,False,False,True,3.0
-Current (Find care),AYODHYA,dialysis,a45cac41-6d27-41ab-878b-7dfb89ec8f33,123.5,False,False,,
 Current (Find care),AYODHYA,dialysis,7fbe7d78-e945-468e-a193-60af898b208e,67.9,False,False,,
-Current (Find care),AYODHYA,dialysis,3eea04cf-d1a5-4ac9-8e40-4c7ee0f52858,115.8,False,False,,
+Current (Find care),AYODHYA,dialysis,1980afa5-d795-4260-a066-33f36e51aded,108.6,False,False,,
+Current (Find care),AYODHYA,dialysis,a45cac41-6d27-41ab-878b-7dfb89ec8f33,123.5,False,False,,
 Current (Find care),AYODHYA,dialysis,,,False,False,True,3.0
 Model 1,AYODHYA,dialysis,7fbe7d78-e945-468e-a193-60af898b208e,67.86994818958196,False,False,,
 Model 1,AYODHYA,dialysis,3a3ce4a6-6a09-4c9d-a8c4-de1ab65754d8,109.0889769144559,False,False,,
@@ -881,7 +901,10 @@ Combined,AYODHYA,icu,7fbe7d78-e945-468e-a193-60af898b208e,67.86994818958196,Fals
 Combined,AYODHYA,icu,404af51a-ac38-4d7c-b405-2f0361f0f3c4,97.87750327142251,False,False,,
 Combined,AYODHYA,icu,b03c3eff-9860-476f-a744-fc983aa5d7f1,46.37317245446144,False,False,,
 Combined,AYODHYA,icu,,,False,False,True,3.0
-Current (Find care),AYODHYA,emergency_247,,,False,False,True,0.0
+Current (Find care),AYODHYA,emergency_247,65001706-ed0d-4744-b421-7e9d3d38e578,10.8,False,False,,
+Current (Find care),AYODHYA,emergency_247,7fbe7d78-e945-468e-a193-60af898b208e,67.9,False,False,,
+Current (Find care),AYODHYA,emergency_247,b03c3eff-9860-476f-a744-fc983aa5d7f1,46.4,False,False,,
+Current (Find care),AYODHYA,emergency_247,,,False,False,True,3.0
 Model 1,AYODHYA,emergency_247,b03c3eff-9860-476f-a744-fc983aa5d7f1,46.37317245446144,False,False,,
 Model 1,AYODHYA,emergency_247,65001706-ed0d-4744-b421-7e9d3d38e578,10.808336868945688,False,False,,
 Model 1,AYODHYA,emergency_247,775b8187-6b42-4107-a34a-ebfb24d193af,65.04360606278021,False,False,,
@@ -959,8 +982,8 @@ Combined,KAMLE,ultrasound,37d6e184-df9f-4118-973a-d9aa9d384ae4,92.59700299255942
 Combined,KAMLE,ultrasound,3b9b6b5d-7d87-4bf2-8b64-7e4c2c5d52be,92.59700299255942,False,False,,
 Combined,KAMLE,ultrasound,,,False,False,True,3.0
 Current (Find care),KAMLE,ct_scan,374d3fdf-4539-4899-b427-d26d2f2f0577,92.6,False,False,,
-Current (Find care),KAMLE,ct_scan,3b9b6b5d-7d87-4bf2-8b64-7e4c2c5d52be,92.6,False,False,,
 Current (Find care),KAMLE,ct_scan,37d6e184-df9f-4118-973a-d9aa9d384ae4,92.6,False,False,,
+Current (Find care),KAMLE,ct_scan,3b9b6b5d-7d87-4bf2-8b64-7e4c2c5d52be,92.6,False,False,,
 Current (Find care),KAMLE,ct_scan,,,False,False,True,3.0
 Model 1,KAMLE,ct_scan,374d3fdf-4539-4899-b427-d26d2f2f0577,92.59700299255942,False,False,,
 Model 1,KAMLE,ct_scan,37d6e184-df9f-4118-973a-d9aa9d384ae4,92.59700299255942,False,False,,
@@ -1118,7 +1141,10 @@ Combined,MAHE,ultrasound,d8244671-73f2-409b-81c3-f0640a0787b6,55.73675369734388,
 Combined,MAHE,ultrasound,2a298de0-ec80-4b19-81df-65d3b22e2f96,13.211425441728338,False,False,,
 Combined,MAHE,ultrasound,7ec8248d-1be3-4057-a371-78b24a58e357,57.53295734305181,False,False,,
 Combined,MAHE,ultrasound,,,False,False,True,3.0
-Current (Find care),MAHE,ct_scan,,,False,False,True,0.0
+Current (Find care),MAHE,ct_scan,8882a726-59ee-4ec1-b7a4-6f2feb0930d1,6.5,False,False,,
+Current (Find care),MAHE,ct_scan,4ed5ad79-a9ec-47e6-8213-dec3eb6bbb48,43.9,False,False,,
+Current (Find care),MAHE,ct_scan,d8244671-73f2-409b-81c3-f0640a0787b6,55.7,False,False,,
+Current (Find care),MAHE,ct_scan,,,False,False,True,3.0
 Model 1,MAHE,ct_scan,8882a726-59ee-4ec1-b7a4-6f2feb0930d1,6.478583117359988,False,False,,
 Model 1,MAHE,ct_scan,4ed5ad79-a9ec-47e6-8213-dec3eb6bbb48,43.88452956454941,False,False,,
 Model 1,MAHE,ct_scan,d8244671-73f2-409b-81c3-f0640a0787b6,55.73675369734388,False,False,,
@@ -1163,7 +1189,10 @@ Combined,MAHE,c_section,5accfa52-afb2-4bc2-8a65-23880b92104e,25.263158955633923,
 Combined,MAHE,c_section,7ec8248d-1be3-4057-a371-78b24a58e357,57.53295734305181,False,False,,
 Combined,MAHE,c_section,dc44e562-bef9-4f3b-8ba7-c1181676b072,106.04819053022692,False,False,,
 Combined,MAHE,c_section,,,False,False,True,3.0
-Current (Find care),MAHE,nicu,,,False,False,True,0.0
+Current (Find care),MAHE,nicu,8882a726-59ee-4ec1-b7a4-6f2feb0930d1,6.5,False,False,,
+Current (Find care),MAHE,nicu,1f56d05d-c126-435a-b0d3-bd3494195f32,57.2,False,False,,
+Current (Find care),MAHE,nicu,7ec8248d-1be3-4057-a371-78b24a58e357,57.5,False,False,,
+Current (Find care),MAHE,nicu,,,False,False,True,3.0
 Model 1,MAHE,nicu,99d164fd-8960-4045-89b9-e800ab97cb3f,59.25721273880957,False,False,,
 Model 1,MAHE,nicu,8882a726-59ee-4ec1-b7a4-6f2feb0930d1,6.478583117359988,False,False,,
 Model 1,MAHE,nicu,7ec8248d-1be3-4057-a371-78b24a58e357,57.53295734305181,False,False,,
@@ -1464,7 +1493,10 @@ Combined,WEST GODAVARI,dialysis,6a49ab71-f378-4834-b1ad-918f16d2801f,97.14655574
 Combined,WEST GODAVARI,dialysis,6678ea1a-54d7-4f3f-8f54-5416414ba681,20.86096296728337,False,False,,
 Combined,WEST GODAVARI,dialysis,66c6a664-c965-4f87-b6d5-a13e60972328,41.44603191268158,False,False,,
 Combined,WEST GODAVARI,dialysis,,,False,False,True,3.0
-Current (Find care),WEST GODAVARI,c_section,,,False,False,True,0.0
+Current (Find care),WEST GODAVARI,c_section,a41a2855-b81a-4248-9908-a2dbadabaa38,10.2,False,False,,
+Current (Find care),WEST GODAVARI,c_section,118d8047-e498-4d2a-a3e8-9765dcccea0d,97.1,False,False,,
+Current (Find care),WEST GODAVARI,c_section,fede230e-ee20-4fe4-81b9-10360144f542,107.3,False,False,,
+Current (Find care),WEST GODAVARI,c_section,,,False,False,True,3.0
 Model 1,WEST GODAVARI,c_section,a41a2855-b81a-4248-9908-a2dbadabaa38,10.210449278297693,False,False,,
 Model 1,WEST GODAVARI,c_section,118d8047-e498-4d2a-a3e8-9765dcccea0d,97.14655574275034,False,False,,
 Model 1,WEST GODAVARI,c_section,fede230e-ee20-4fe4-81b9-10360144f542,107.31768996681697,False,False,,
@@ -1837,7 +1869,7 @@ Combined,GONDIA,emergency_247,0bb4e1ae-38d7-4c2b-8034-1ac78f88ff4a,22.1706355493
 Combined,GONDIA,emergency_247,,,False,False,True,3.0
 Current (Find care),GONDIA,cath_lab,a385f373-09ae-494f-a9a3-af56f4181fd0,16.4,False,False,,
 Current (Find care),GONDIA,cath_lab,3d2af64f-3024-4db5-b048-0fc7e42a7174,16.5,False,False,,
-Current (Find care),GONDIA,cath_lab,515fb95f-d589-418f-b510-d8bf7438f884,130.4,False,False,,
+Current (Find care),GONDIA,cath_lab,e1061350-d5ef-4bc1-93ad-75feebdb1d70,116.8,False,False,,
 Current (Find care),GONDIA,cath_lab,,,False,False,True,3.0
 Model 1,GONDIA,cath_lab,a385f373-09ae-494f-a9a3-af56f4181fd0,16.36092746883137,False,False,,
 Model 1,GONDIA,cath_lab,2926e4a6-d59e-45bc-9126-ac748df91808,111.66942545903952,False,False,,
@@ -1851,7 +1883,10 @@ Combined,GONDIA,cath_lab,a385f373-09ae-494f-a9a3-af56f4181fd0,16.36092746883137,
 Combined,GONDIA,cath_lab,51ee60c0-39ea-46ce-8f68-517cab365f19,114.36190472830408,False,False,,
 Combined,GONDIA,cath_lab,2cb66ffa-8f3b-40be-9242-9431a9a96a5d,115.54788073758762,False,False,,
 Combined,GONDIA,cath_lab,,,False,False,True,3.0
-Current (Find care),GONDIA,ent,,,False,False,True,0.0
+Current (Find care),GONDIA,ent,3d2af64f-3024-4db5-b048-0fc7e42a7174,16.5,False,False,,
+Current (Find care),GONDIA,ent,22cf4a60-28e2-468f-9b24-fbd808f9cf7b,113.3,False,False,,
+Current (Find care),GONDIA,ent,b6cb8f49-4d5b-4cdf-bd06-08fac063a5b2,115.9,False,False,,
+Current (Find care),GONDIA,ent,,,False,False,True,3.0
 Model 1,GONDIA,ent,3d2af64f-3024-4db5-b048-0fc7e42a7174,16.508604938700515,False,False,,
 Model 1,GONDIA,ent,60b6865f-c240-4059-aeb5-c5c189a4bcba,113.94715602859391,False,False,,
 Model 1,GONDIA,ent,b6cb8f49-4d5b-4cdf-bd06-08fac063a5b2,115.88937560853157,False,False,,
@@ -2264,7 +2299,7 @@ Combined,TIRUNELVELI,c_section,74fa5ec2-b7fb-498a-84c3-0a0fd3a8c81b,15.861104285
 Combined,TIRUNELVELI,c_section,,,False,False,True,3.0
 Current (Find care),TIRUNELVELI,nicu,17615adf-fb9e-4fc2-b7a2-7fc24f008ebf,16.2,False,False,,
 Current (Find care),TIRUNELVELI,nicu,7e6e4ee0-36b6-4c6c-9574-d7f2fdfde41e,15.3,False,False,,
-Current (Find care),TIRUNELVELI,nicu,712fef10-eb2e-4770-9779-1af2784dcb7d,17.1,False,False,,
+Current (Find care),TIRUNELVELI,nicu,f1e17951-5b66-4d5a-9b3b-3ee0dcb4807b,16.5,False,False,,
 Current (Find care),TIRUNELVELI,nicu,,,False,False,True,3.0
 Model 1,TIRUNELVELI,nicu,7e6e4ee0-36b6-4c6c-9574-d7f2fdfde41e,15.307486690099083,False,False,,
 Model 1,TIRUNELVELI,nicu,f1e17951-5b66-4d5a-9b3b-3ee0dcb4807b,16.479224582969294,False,False,,
@@ -2278,9 +2313,9 @@ Combined,TIRUNELVELI,nicu,7e6e4ee0-36b6-4c6c-9574-d7f2fdfde41e,15.30748669009908
 Combined,TIRUNELVELI,nicu,74fa5ec2-b7fb-498a-84c3-0a0fd3a8c81b,15.861104285847428,False,False,,
 Combined,TIRUNELVELI,nicu,712fef10-eb2e-4770-9779-1af2784dcb7d,17.067671272094554,False,False,,
 Combined,TIRUNELVELI,nicu,,,False,False,True,3.0
-Current (Find care),TIRUNELVELI,icu,712fef10-eb2e-4770-9779-1af2784dcb7d,17.1,False,False,,
-Current (Find care),TIRUNELVELI,icu,7e6e4ee0-36b6-4c6c-9574-d7f2fdfde41e,15.3,False,False,,
 Current (Find care),TIRUNELVELI,icu,f1e17951-5b66-4d5a-9b3b-3ee0dcb4807b,16.5,False,False,,
+Current (Find care),TIRUNELVELI,icu,7e6e4ee0-36b6-4c6c-9574-d7f2fdfde41e,15.3,False,False,,
+Current (Find care),TIRUNELVELI,icu,712fef10-eb2e-4770-9779-1af2784dcb7d,17.1,False,False,,
 Current (Find care),TIRUNELVELI,icu,,,False,False,True,3.0
 Model 1,TIRUNELVELI,icu,57072b5a-7d29-4b65-9003-5d9bd54583cd,15.439386497599303,False,False,,
 Model 1,TIRUNELVELI,icu,9bb8715a-99ae-455c-af35-a9e82deb30c6,50.02237552309755,False,False,,
@@ -2359,7 +2394,7 @@ Combined,ZUNHEBOTO,xray,b8512aa5-4918-42c2-9137-e408079f5d7c,272.97737065198305,
 Combined,ZUNHEBOTO,xray,e93a7ae0-8d8f-49d1-9536-e2a2c0759a10,276.0541658274375,False,False,,
 Combined,ZUNHEBOTO,xray,,,False,False,True,3.0
 Current (Find care),ZUNHEBOTO,ultrasound,2f95dcea-c825-47b8-b656-4a44d0ef7c9e,185.3,False,False,,
-Current (Find care),ZUNHEBOTO,ultrasound,2ee91ec2-1e36-4498-a1a5-ef628c7eb9b4,166.9,False,False,,
+Current (Find care),ZUNHEBOTO,ultrasound,37d6e184-df9f-4118-973a-d9aa9d384ae4,166.9,False,False,,
 Current (Find care),ZUNHEBOTO,ultrasound,a9b56d47-b5d7-43d4-9d16-7dcb73775bc1,221.9,False,False,,
 Current (Find care),ZUNHEBOTO,ultrasound,,,False,False,True,3.0
 Model 1,ZUNHEBOTO,ultrasound,1928cf09-8426-4ac9-adc4-0b4d33fc3946,146.30555437841008,False,False,,
@@ -2466,9 +2501,9 @@ Combined,ZUNHEBOTO,emergency_247,587bf5c2-9fcd-450c-8fe1-8dbdff1adb8a,76.7245743
 Combined,ZUNHEBOTO,emergency_247,3fc1cb91-b14c-4dd0-b488-7f0d97a9c28d,83.71415937937215,False,False,,
 Combined,ZUNHEBOTO,emergency_247,50c14ceb-71eb-4b3d-8e10-9f4826b53f90,88.67017209255765,False,False,,
 Combined,ZUNHEBOTO,emergency_247,,,False,False,True,3.0
-Current (Find care),ZUNHEBOTO,cath_lab,e93a7ae0-8d8f-49d1-9536-e2a2c0759a10,276.1,False,False,,
-Current (Find care),ZUNHEBOTO,cath_lab,42864584-b4b4-4752-8c92-786cf28a3a83,146.3,False,False,,
 Current (Find care),ZUNHEBOTO,cath_lab,2caaab40-39cc-4ab2-8840-cb2405596bf9,266.8,False,False,,
+Current (Find care),ZUNHEBOTO,cath_lab,42864584-b4b4-4752-8c92-786cf28a3a83,146.3,False,False,,
+Current (Find care),ZUNHEBOTO,cath_lab,e93a7ae0-8d8f-49d1-9536-e2a2c0759a10,276.1,False,False,,
 Current (Find care),ZUNHEBOTO,cath_lab,,,False,False,True,3.0
 Model 1,ZUNHEBOTO,cath_lab,42864584-b4b4-4752-8c92-786cf28a3a83,146.3100074931652,False,False,,
 Model 1,ZUNHEBOTO,cath_lab,2ee91ec2-1e36-4498-a1a5-ef628c7eb9b4,166.8634933589034,False,False,,
@@ -2564,7 +2599,7 @@ Combined,TONK,dialysis,ebb4d2d3-4c1d-436d-b270-2e0f4498cfaa,77.7262773361278,Fal
 Combined,TONK,dialysis,,,False,False,True,3.0
 Current (Find care),TONK,c_section,8de46ac7-edde-480b-96a9-fb39f8c3c8d9,84.3,False,False,,
 Current (Find care),TONK,c_section,b573b0e9-aebf-4deb-aeac-b204e05f7414,71.7,False,False,,
-Current (Find care),TONK,c_section,e1f35444-4d62-4730-b616-5cca44814439,85.3,False,False,,
+Current (Find care),TONK,c_section,e7cf3511-c4e1-41b0-9a86-b11a6bdfd0e7,78.5,False,False,,
 Current (Find care),TONK,c_section,,,False,False,True,3.0
 Model 1,TONK,c_section,b573b0e9-aebf-4deb-aeac-b204e05f7414,71.68957260109319,False,False,,
 Model 1,TONK,c_section,1f464921-0ab6-41c9-bac6-807c40585731,72.24905218810606,False,False,,
@@ -2594,7 +2629,10 @@ Combined,TONK,nicu,e273f7f2-59f5-4426-9e4f-a20face60074,73.56032143767007,False,
 Combined,TONK,nicu,a618961b-bffb-4781-a298-24f40c83cee8,78.75199077753108,False,False,,
 Combined,TONK,nicu,17810993-d85c-4a44-9367-c6e7c5044acd,82.4916315970861,False,False,,
 Combined,TONK,nicu,,,False,False,True,3.0
-Current (Find care),TONK,icu,,,False,False,True,0.0
+Current (Find care),TONK,icu,daf2eec0-257c-4f35-a47e-9251e24d0432,10.6,False,False,,
+Current (Find care),TONK,icu,5f6eb7d7-b386-4a8f-92c4-102651f8ae40,68.3,False,False,,
+Current (Find care),TONK,icu,acdc2105-2e99-4c66-92c7-6d1f6c932ce7,77.1,False,False,,
+Current (Find care),TONK,icu,,,False,False,True,3.0
 Model 1,TONK,icu,8ea0fdef-17cc-4da6-9f0b-2ffb79c7c41e,72.19996171115304,False,False,,
 Model 1,TONK,icu,6806d5d3-419a-4c80-85b6-8857bea1a3fe,72.87948436352342,False,False,,
 Model 1,TONK,icu,0f4491dc-4c44-4f55-923f-da7213598783,73.2869633770549,False,False,,
@@ -2607,7 +2645,10 @@ Combined,TONK,icu,8ea0fdef-17cc-4da6-9f0b-2ffb79c7c41e,72.19996171115304,False,F
 Combined,TONK,icu,839a32f9-9f3d-45a5-9194-c302089b9705,73.04005599621645,False,False,,
 Combined,TONK,icu,0f4491dc-4c44-4f55-923f-da7213598783,73.2869633770549,False,False,,
 Combined,TONK,icu,,,False,False,True,3.0
-Current (Find care),TONK,emergency_247,,,False,False,True,0.0
+Current (Find care),TONK,emergency_247,daf2eec0-257c-4f35-a47e-9251e24d0432,10.6,False,False,,
+Current (Find care),TONK,emergency_247,5f6eb7d7-b386-4a8f-92c4-102651f8ae40,68.3,False,False,,
+Current (Find care),TONK,emergency_247,6f0b3b0d-7c58-4a74-abb9-d4f07ac7524a,71.2,False,False,,
+Current (Find care),TONK,emergency_247,,,False,False,True,3.0
 Model 1,TONK,emergency_247,5f6eb7d7-b386-4a8f-92c4-102651f8ae40,68.29525709490143,False,False,,
 Model 1,TONK,emergency_247,9f0ecb78-c95f-4992-a22a-c0940c0c2e67,67.91864396124639,False,False,,
 Model 1,TONK,emergency_247,0f4491dc-4c44-4f55-923f-da7213598783,73.2869633770549,False,False,,
@@ -2636,7 +2677,10 @@ Combined,TONK,cath_lab,1ed01ba6-2031-49aa-9f34-23caa8f7f93b,69.99667978892596,Fa
 Combined,TONK,cath_lab,e273f7f2-59f5-4426-9e4f-a20face60074,73.56032143767007,False,False,,
 Combined,TONK,cath_lab,1272bf33-a367-494c-a0b2-86a8ab3ca90c,74.03412765208756,False,False,,
 Combined,TONK,cath_lab,,,False,False,True,3.0
-Current (Find care),TONK,ent,,,False,False,True,0.0
+Current (Find care),TONK,ent,daf2eec0-257c-4f35-a47e-9251e24d0432,10.6,False,False,,
+Current (Find care),TONK,ent,2829513f-8ac6-49a0-b90c-36a6ff946f58,67.0,False,False,,
+Current (Find care),TONK,ent,3973f354-7588-4375-a5c1-f85957185077,86.7,False,False,,
+Current (Find care),TONK,ent,,,False,False,True,3.0
 Model 1,TONK,ent,2829513f-8ac6-49a0-b90c-36a6ff946f58,67.0260348827764,False,False,,
 Model 1,TONK,ent,2fe535c2-e252-45a9-8123-a4308441a8b4,67.45402404436342,False,False,,
 Model 1,TONK,ent,d593738b-4ab5-48de-8585-325f2252a313,71.20803778519702,False,False,,
@@ -2699,7 +2743,7 @@ Combined,BANDA,ct_scan,1ee06ace-37e0-47db-91c6-7a7d4ca9e286,107.49550768868303,F
 Combined,BANDA,ct_scan,,,False,False,True,3.0
 Current (Find care),BANDA,dialysis,865e556a-85b8-451c-82bf-5cc1ccbe33d5,108.1,False,False,,
 Current (Find care),BANDA,dialysis,f81f97a0-9f91-4682-a285-47ba49df0daa,113.0,False,False,,
-Current (Find care),BANDA,dialysis,668afa66-7048-4956-8c16-399ff93ec883,135.4,False,False,,
+Current (Find care),BANDA,dialysis,adae175f-c5b4-43f8-b94e-ca9cd4062826,134.1,False,False,,
 Current (Find care),BANDA,dialysis,,,False,False,True,3.0
 Model 1,BANDA,dialysis,b79b6f78-8e4a-4467-bb13-a65bd6e02e78,106.40693876657414,False,False,,
 Model 1,BANDA,dialysis,865e556a-85b8-451c-82bf-5cc1ccbe33d5,108.11031105121747,False,False,,
@@ -2747,7 +2791,7 @@ Combined,BANDA,nicu,668afa66-7048-4956-8c16-399ff93ec883,135.42084416784206,Fals
 Combined,BANDA,nicu,,,False,False,True,3.0
 Current (Find care),BANDA,icu,562f2b92-c90f-480d-bb93-e49a1e2285c0,16.2,False,False,,
 Current (Find care),BANDA,icu,07434005-eac1-46c6-804b-9dceecf29ca3,106.5,False,False,,
-Current (Find care),BANDA,icu,16d9d5a6-ee35-4281-8a95-b280c1829886,112.7,False,False,,
+Current (Find care),BANDA,icu,865e556a-85b8-451c-82bf-5cc1ccbe33d5,108.1,False,False,,
 Current (Find care),BANDA,icu,,,False,False,True,3.0
 Model 1,BANDA,icu,52a696ab-bdf5-4f6e-8bcf-37afc8dd579a,104.5905643838652,False,False,,
 Model 1,BANDA,icu,b79b6f78-8e4a-4467-bb13-a65bd6e02e78,106.40693876657414,False,False,,
@@ -2789,7 +2833,7 @@ Combined,BANDA,cath_lab,aebb8d07-b055-4b25-b3db-c36ff1a3a09d,110.42932017117963,
 Combined,BANDA,cath_lab,9e6e1baf-e632-4b83-97cf-fad2300aa110,112.22358485914825,False,False,,
 Combined,BANDA,cath_lab,a7757509-519c-42f9-a60d-62573825fbb8,129.16894631208862,False,False,,
 Combined,BANDA,cath_lab,,,False,False,True,3.0
-Current (Find care),BANDA,ent,668afa66-7048-4956-8c16-399ff93ec883,135.4,False,False,,
+Current (Find care),BANDA,ent,f3beface-15a0-4f79-b144-aa86ed942c5d,109.4,True,True,,
 Current (Find care),BANDA,ent,358cbbe8-8ff9-4daa-846a-d9577264f1a5,101.9,False,False,,
 Current (Find care),BANDA,ent,c6200f20-c0d2-4849-80d7-16848ae32448,134.3,False,False,,
 Current (Find care),BANDA,ent,,,False,False,True,3.0
@@ -3165,9 +3209,9 @@ Combined,CHITRAKOOT,ct_scan,1ee06ace-37e0-47db-91c6-7a7d4ca9e286,77.279200388164
 Combined,CHITRAKOOT,ct_scan,1180ca3b-7096-4f52-9b11-3e9e22039fc5,86.42851558904422,False,False,,
 Combined,CHITRAKOOT,ct_scan,a2a3c136-126f-4fc8-a71d-ccbe09e801af,88.4765511206888,False,False,,
 Combined,CHITRAKOOT,ct_scan,,,False,False,True,3.0
-Current (Find care),CHITRAKOOT,dialysis,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
-Current (Find care),CHITRAKOOT,dialysis,a7757509-519c-42f9-a60d-62573825fbb8,81.6,False,False,,
 Current (Find care),CHITRAKOOT,dialysis,adae175f-c5b4-43f8-b94e-ca9cd4062826,86.5,False,False,,
+Current (Find care),CHITRAKOOT,dialysis,a7757509-519c-42f9-a60d-62573825fbb8,81.6,False,False,,
+Current (Find care),CHITRAKOOT,dialysis,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
 Current (Find care),CHITRAKOOT,dialysis,,,False,False,True,3.0
 Model 1,CHITRAKOOT,dialysis,a7757509-519c-42f9-a60d-62573825fbb8,81.59307271919741,False,False,,
 Model 1,CHITRAKOOT,dialysis,668afa66-7048-4956-8c16-399ff93ec883,87.88100234110091,False,False,,
@@ -3197,9 +3241,9 @@ Combined,CHITRAKOOT,c_section,668afa66-7048-4956-8c16-399ff93ec883,87.8810023411
 Combined,CHITRAKOOT,c_section,a2a3c136-126f-4fc8-a71d-ccbe09e801af,88.4765511206888,False,False,,
 Combined,CHITRAKOOT,c_section,14510729-4176-4647-a353-fc6e5a119196,88.58006670581999,False,False,,
 Combined,CHITRAKOOT,c_section,,,False,False,True,3.0
-Current (Find care),CHITRAKOOT,nicu,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
-Current (Find care),CHITRAKOOT,nicu,a7757509-519c-42f9-a60d-62573825fbb8,81.6,False,False,,
 Current (Find care),CHITRAKOOT,nicu,adae175f-c5b4-43f8-b94e-ca9cd4062826,86.5,False,False,,
+Current (Find care),CHITRAKOOT,nicu,a7757509-519c-42f9-a60d-62573825fbb8,81.6,False,False,,
+Current (Find care),CHITRAKOOT,nicu,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
 Current (Find care),CHITRAKOOT,nicu,,,False,False,True,3.0
 Model 1,CHITRAKOOT,nicu,fa690324-eacf-438f-bd7c-049ac1407d01,88.13578809791794,False,False,,
 Model 1,CHITRAKOOT,nicu,668afa66-7048-4956-8c16-399ff93ec883,87.88100234110091,False,False,,
@@ -3215,7 +3259,7 @@ Combined,CHITRAKOOT,nicu,7e64f404-f487-414b-9c41-a1906b9f7a46,88.94685127479842,
 Combined,CHITRAKOOT,nicu,,,False,False,True,3.0
 Current (Find care),CHITRAKOOT,icu,562f2b92-c90f-480d-bb93-e49a1e2285c0,69.6,False,False,,
 Current (Find care),CHITRAKOOT,icu,f8590b88-4133-4749-bdae-20aa11314a72,81.1,False,False,,
-Current (Find care),CHITRAKOOT,icu,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
+Current (Find care),CHITRAKOOT,icu,adae175f-c5b4-43f8-b94e-ca9cd4062826,86.5,False,False,,
 Current (Find care),CHITRAKOOT,icu,,,False,False,True,3.0
 Model 1,CHITRAKOOT,icu,f8590b88-4133-4749-bdae-20aa11314a72,81.14602873462276,False,False,,
 Model 1,CHITRAKOOT,icu,a7757509-519c-42f9-a60d-62573825fbb8,81.59307271919741,False,False,,
@@ -3231,7 +3275,7 @@ Combined,CHITRAKOOT,icu,8085a160-c176-4dfa-8b03-04da62caa919,86.40202806966684,F
 Combined,CHITRAKOOT,icu,,,False,False,True,3.0
 Current (Find care),CHITRAKOOT,emergency_247,562f2b92-c90f-480d-bb93-e49a1e2285c0,69.6,False,False,,
 Current (Find care),CHITRAKOOT,emergency_247,58be8348-761c-487c-a8a4-1addd474b8f3,80.0,False,False,,
-Current (Find care),CHITRAKOOT,emergency_247,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
+Current (Find care),CHITRAKOOT,emergency_247,f8590b88-4133-4749-bdae-20aa11314a72,81.1,False,False,,
 Current (Find care),CHITRAKOOT,emergency_247,,,False,False,True,3.0
 Model 1,CHITRAKOOT,emergency_247,1c06c3fb-d30f-4c9b-a12b-37e8745d68ca,76.10918696647455,False,False,,
 Model 1,CHITRAKOOT,emergency_247,a7757509-519c-42f9-a60d-62573825fbb8,81.59307271919741,False,False,,
@@ -3261,9 +3305,9 @@ Combined,CHITRAKOOT,cath_lab,a7757509-519c-42f9-a60d-62573825fbb8,81.59307271919
 Combined,CHITRAKOOT,cath_lab,150238d0-3e2b-4cb8-a60d-34db4d95fbdb,87.65950908900665,False,False,,
 Combined,CHITRAKOOT,cath_lab,85be707f-0387-4e0d-b33c-75ddc19e2d01,88.61641640057185,False,False,,
 Combined,CHITRAKOOT,cath_lab,,,False,False,True,3.0
-Current (Find care),CHITRAKOOT,ent,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
-Current (Find care),CHITRAKOOT,ent,a7757509-519c-42f9-a60d-62573825fbb8,81.6,False,False,,
 Current (Find care),CHITRAKOOT,ent,c6200f20-c0d2-4849-80d7-16848ae32448,85.6,False,False,,
+Current (Find care),CHITRAKOOT,ent,a7757509-519c-42f9-a60d-62573825fbb8,81.6,False,False,,
+Current (Find care),CHITRAKOOT,ent,668afa66-7048-4956-8c16-399ff93ec883,87.9,False,False,,
 Current (Find care),CHITRAKOOT,ent,,,False,False,True,3.0
 Model 1,CHITRAKOOT,ent,50d1cdaf-d307-49c5-bd46-df68827095f5,84.7606739462586,False,False,,
 Model 1,CHITRAKOOT,ent,673c6aff-d0a1-42c9-af09-68e5542d3969,88.25636175193607,False,False,,
@@ -3375,7 +3419,7 @@ Combined,RANGA REDDY,nicu,45e98cc9-8672-4de5-993e-9dcb83f4dad7,15.03950730293248
 Combined,RANGA REDDY,nicu,,,False,False,True,3.0
 Current (Find care),RANGA REDDY,icu,bbdf6de2-17ba-4029-a7e5-81e902b11067,8.9,False,False,,
 Current (Find care),RANGA REDDY,icu,ffd0363c-d7c8-4e17-9a67-feabe3bbbdbb,5.5,False,False,,
-Current (Find care),RANGA REDDY,icu,f407e788-0b2f-4c12-8662-a32aa2175d6f,9.9,True,True,,
+Current (Find care),RANGA REDDY,icu,71169eff-e754-4ba9-b740-b44cc44643cb,9.5,True,True,,
 Current (Find care),RANGA REDDY,icu,,,False,False,True,3.0
 Model 1,RANGA REDDY,icu,ddcdc6a2-65a4-48d0-8acc-383bc4ed42b4,6.744547097866907,False,False,,
 Model 1,RANGA REDDY,icu,7550da71-847c-4a93-8dd9-70b14c886d87,8.261288717452999,False,False,,
@@ -3471,7 +3515,7 @@ Combined,PALGHAR,ultrasound,e7187bdc-3c67-4419-9954-f4813abc68a3,81.306080859672
 Combined,PALGHAR,ultrasound,,,False,False,True,3.0
 Current (Find care),PALGHAR,ct_scan,2871dbe1-4cfc-49d8-8aa4-39fd9c07db31,57.6,False,False,,
 Current (Find care),PALGHAR,ct_scan,32349511-795f-4aaa-b76c-8ef511aeb300,52.3,False,False,,
-Current (Find care),PALGHAR,ct_scan,cac5afcc-759e-49e4-aa2f-5f5885cf3e0c,72.5,False,False,,
+Current (Find care),PALGHAR,ct_scan,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,67.0,False,False,,
 Current (Find care),PALGHAR,ct_scan,,,False,False,True,3.0
 Model 1,PALGHAR,ct_scan,32349511-795f-4aaa-b76c-8ef511aeb300,52.27606316118472,False,False,,
 Model 1,PALGHAR,ct_scan,a83112ff-48ab-4c84-a3ca-89e3ed6fd23b,53.69165794296073,False,False,,
@@ -3487,7 +3531,7 @@ Combined,PALGHAR,ct_scan,02b010de-143d-4e1b-9d67-cb11877c4855,61.662914130567536
 Combined,PALGHAR,ct_scan,,,False,False,True,3.0
 Current (Find care),PALGHAR,dialysis,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,67.0,False,False,,
 Current (Find care),PALGHAR,dialysis,851a4aba-ea01-4016-8f8f-f972ca4d448d,37.2,False,False,,
-Current (Find care),PALGHAR,dialysis,acd22962-2d73-4e83-8f45-ff995a417c34,89.6,False,False,,
+Current (Find care),PALGHAR,dialysis,2bc5af49-5cbb-4cf9-9009-1b5d861ac02e,46.2,False,False,,
 Current (Find care),PALGHAR,dialysis,,,False,False,True,3.0
 Model 1,PALGHAR,dialysis,851a4aba-ea01-4016-8f8f-f972ca4d448d,37.1560526365926,False,False,,
 Model 1,PALGHAR,dialysis,4c94dfcb-fe8d-4595-86db-dc83b82c6e85,56.967307409601524,False,False,,
@@ -3519,7 +3563,7 @@ Combined,PALGHAR,c_section,40526ecd-6825-4690-a515-5f060f6bb8b2,64.1196570041583
 Combined,PALGHAR,c_section,,,False,False,True,3.0
 Current (Find care),PALGHAR,nicu,db225bdf-e3e1-4766-9033-8d95ef291906,63.5,False,False,,
 Current (Find care),PALGHAR,nicu,588186f8-7a04-442f-9baa-c8e4d761677f,36.2,False,False,,
-Current (Find care),PALGHAR,nicu,7b4b465b-4e30-48ca-abba-b1db245e3967,85.2,False,False,,
+Current (Find care),PALGHAR,nicu,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,67.0,False,False,,
 Current (Find care),PALGHAR,nicu,,,False,False,True,3.0
 Model 1,PALGHAR,nicu,3798141e-c980-4b89-8c87-b5bcfdfdde97,36.65334099186671,False,False,,
 Model 1,PALGHAR,nicu,c5598920-4152-4fac-95ae-62151f23bbf8,54.50747284998824,False,False,,
@@ -3567,7 +3611,7 @@ Combined,PALGHAR,emergency_247,4e9cba25-f072-4a91-b6e6-55564d10678e,53.891378791
 Combined,PALGHAR,emergency_247,,,False,False,True,3.0
 Current (Find care),PALGHAR,cath_lab,2871dbe1-4cfc-49d8-8aa4-39fd9c07db31,57.6,False,False,,
 Current (Find care),PALGHAR,cath_lab,a83112ff-48ab-4c84-a3ca-89e3ed6fd23b,53.7,False,False,,
-Current (Find care),PALGHAR,cath_lab,1a62801f-4ddb-43e0-81cc-182cb1311171,85.3,False,False,,
+Current (Find care),PALGHAR,cath_lab,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,67.0,False,False,,
 Current (Find care),PALGHAR,cath_lab,,,False,False,True,3.0
 Model 1,PALGHAR,cath_lab,9f1eb29d-eea4-4616-ba2c-3e937867bc1d,55.750187938458645,False,False,,
 Model 1,PALGHAR,cath_lab,c74e7fd1-1700-4451-b153-32edd1f91593,60.677221754175726,False,False,,
@@ -3705,8 +3749,8 @@ Combined,Jagitial,icu,e6e7c8da-62a6-46fe-8e21-b1a568782cdd,80.74308471483673,Tru
 Combined,Jagitial,icu,94cfa2e6-28a9-4597-ac9b-8769b0743955,85.89704701191063,False,False,,
 Combined,Jagitial,icu,87a43ad2-d525-4629-9e60-99f17cbed5b5,48.53110034385532,False,False,,
 Combined,Jagitial,icu,,,False,False,True,3.0
-Current (Find care),Jagitial,emergency_247,87a43ad2-d525-4629-9e60-99f17cbed5b5,48.5,False,False,,
 Current (Find care),Jagitial,emergency_247,5aec1d0a-9c7b-4a29-9d47-9331e14f75a8,46.6,False,False,,
+Current (Find care),Jagitial,emergency_247,87a43ad2-d525-4629-9e60-99f17cbed5b5,48.5,False,False,,
 Current (Find care),Jagitial,emergency_247,41324eff-7351-4bdc-b48e-e72dd18b4df3,56.3,False,False,,
 Current (Find care),Jagitial,emergency_247,,,False,False,True,3.0
 Model 1,Jagitial,emergency_247,41324eff-7351-4bdc-b48e-e72dd18b4df3,56.29435362041112,False,False,,
@@ -3990,7 +4034,7 @@ Combined,NADIA,c_section,9f25a38c-c40a-43df-bf27-180299e144e1,95.6793605984327,F
 Combined,NADIA,c_section,,,False,False,True,3.0
 Current (Find care),NADIA,nicu,e3d48afc-70e3-4eb1-8c50-35b7764d8632,96.0,True,False,,
 Current (Find care),NADIA,nicu,e1940a66-2e63-489d-a700-1b818edc9c90,49.6,False,False,,
-Current (Find care),NADIA,nicu,e2ea28ba-5ae2-4d6e-9173-92140c92401e,72.6,False,False,,
+Current (Find care),NADIA,nicu,6dcb5489-f55c-455e-aeaf-f8231e7e9ea7,64.7,False,False,,
 Current (Find care),NADIA,nicu,,,False,False,True,3.0
 Model 1,NADIA,nicu,6dcb5489-f55c-455e-aeaf-f8231e7e9ea7,64.65077013264833,False,False,,
 Model 1,NADIA,nicu,e2ea28ba-5ae2-4d6e-9173-92140c92401e,72.55870105047757,False,False,,
@@ -4054,7 +4098,7 @@ Combined,NADIA,cath_lab,8d8ddf59-32df-4d13-a39e-158c2a0787e9,96.36742290622801,F
 Combined,NADIA,cath_lab,,,False,False,True,3.0
 Current (Find care),NADIA,ent,656efe71-c867-4df5-aeaf-7a1f8168fa8a,91.3,False,False,,
 Current (Find care),NADIA,ent,73f398ef-1860-4263-a549-c7ff567b9e36,49.9,False,False,,
-Current (Find care),NADIA,ent,8d8ddf59-32df-4d13-a39e-158c2a0787e9,96.4,False,False,,
+Current (Find care),NADIA,ent,e3d48afc-70e3-4eb1-8c50-35b7764d8632,96.0,True,False,,
 Current (Find care),NADIA,ent,,,False,False,True,3.0
 Model 1,NADIA,ent,58a4d0b7-5b03-4b7f-965b-6e260b2c0918,56.860276448287784,False,False,,
 Model 1,NADIA,ent,cfcabb44-b07e-4f8e-8a6f-543c2d178751,73.06080845298011,False,False,,
@@ -4100,9 +4144,9 @@ Combined,MUMBAI SUBURBAN,ultrasound,06011a36-bc17-4e2a-8308-6d029cef7be8,6.32837
 Combined,MUMBAI SUBURBAN,ultrasound,a4c9f109-6b27-4fca-983d-18767250ea49,6.634790319410353,True,True,,
 Combined,MUMBAI SUBURBAN,ultrasound,e7187bdc-3c67-4419-9954-f4813abc68a3,9.24004646313129,True,True,,
 Combined,MUMBAI SUBURBAN,ultrasound,,,False,False,True,3.0
-Current (Find care),MUMBAI SUBURBAN,ct_scan,366b20f5-43a2-4db9-bf21-2897a822df85,3.0,False,False,,
-Current (Find care),MUMBAI SUBURBAN,ct_scan,c30c1517-2647-4f0d-84cb-db96ec12fa71,1.1,False,False,,
 Current (Find care),MUMBAI SUBURBAN,ct_scan,cb8367c2-e99e-4ebe-b9e5-e8213c8f423d,1.6,False,False,,
+Current (Find care),MUMBAI SUBURBAN,ct_scan,c30c1517-2647-4f0d-84cb-db96ec12fa71,1.1,False,False,,
+Current (Find care),MUMBAI SUBURBAN,ct_scan,366b20f5-43a2-4db9-bf21-2897a822df85,3.0,False,False,,
 Current (Find care),MUMBAI SUBURBAN,ct_scan,,,False,False,True,3.0
 Model 1,MUMBAI SUBURBAN,ct_scan,c30c1517-2647-4f0d-84cb-db96ec12fa71,1.109315037299711,False,False,,
 Model 1,MUMBAI SUBURBAN,ct_scan,cb8367c2-e99e-4ebe-b9e5-e8213c8f423d,1.596594264946034,False,False,,
@@ -4116,7 +4160,10 @@ Combined,MUMBAI SUBURBAN,ct_scan,6382feb6-79d9-43e4-92fd-5609c30ef481,4.28775386
 Combined,MUMBAI SUBURBAN,ct_scan,a4c9f109-6b27-4fca-983d-18767250ea49,6.634790319410353,True,True,,
 Combined,MUMBAI SUBURBAN,ct_scan,02b010de-143d-4e1b-9d67-cb11877c4855,10.770735420850118,False,False,,
 Combined,MUMBAI SUBURBAN,ct_scan,,,False,False,True,3.0
-Current (Find care),MUMBAI SUBURBAN,dialysis,,,False,False,True,0.0
+Current (Find care),MUMBAI SUBURBAN,dialysis,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6,True,True,,
+Current (Find care),MUMBAI SUBURBAN,dialysis,99d8aef2-7c02-45cb-b47a-9e2928de8512,2.3,False,False,,
+Current (Find care),MUMBAI SUBURBAN,dialysis,930faaa7-0cbc-4de8-86ae-463dba1a3736,6.9,True,True,,
+Current (Find care),MUMBAI SUBURBAN,dialysis,,,False,False,True,3.0
 Model 1,MUMBAI SUBURBAN,dialysis,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6234575975952785,True,True,,
 Model 1,MUMBAI SUBURBAN,dialysis,1630780b-e4d0-4b9d-9c39-4f1446f24d6b,2.457020420935929,False,False,,
 Model 1,MUMBAI SUBURBAN,dialysis,793e0fb4-f92a-4718-963b-637da784e494,5.963629009414835,False,False,,
@@ -4147,7 +4194,7 @@ Combined,MUMBAI SUBURBAN,c_section,dafed6f6-c856-47d3-a6e4-06ea20cfed3e,18.16511
 Combined,MUMBAI SUBURBAN,c_section,,,False,False,True,3.0
 Current (Find care),MUMBAI SUBURBAN,nicu,02a71fd5-7e3c-40c5-a42d-1a532aa61ce2,0.8,False,False,,
 Current (Find care),MUMBAI SUBURBAN,nicu,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6,True,False,,
-Current (Find care),MUMBAI SUBURBAN,nicu,c6b28bc1-e070-4231-8abe-0cd67e109319,8.8,False,False,,
+Current (Find care),MUMBAI SUBURBAN,nicu,793e0fb4-f92a-4718-963b-637da784e494,6.0,False,False,,
 Current (Find care),MUMBAI SUBURBAN,nicu,,,False,False,True,3.0
 Model 1,MUMBAI SUBURBAN,nicu,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6234575975952785,True,False,,
 Model 1,MUMBAI SUBURBAN,nicu,fe23dd4d-7cca-47b3-aad4-293b62e32cb2,6.03546623685395,False,False,,
@@ -4177,7 +4224,10 @@ Combined,MUMBAI SUBURBAN,icu,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.623457597595
 Combined,MUMBAI SUBURBAN,icu,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,9.712927278140134,False,False,,
 Combined,MUMBAI SUBURBAN,icu,e2fdddaa-944e-4459-bfaa-c0a8b39744ea,10.973910611960129,True,True,,
 Combined,MUMBAI SUBURBAN,icu,,,False,False,True,3.0
-Current (Find care),MUMBAI SUBURBAN,emergency_247,,,False,False,True,0.0
+Current (Find care),MUMBAI SUBURBAN,emergency_247,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6,True,True,,
+Current (Find care),MUMBAI SUBURBAN,emergency_247,e870fdd8-0b58-4ba5-ad7d-1105df50eb2f,2.0,False,False,,
+Current (Find care),MUMBAI SUBURBAN,emergency_247,745e36ca-5907-4875-b607-bd2328b5a5f4,4.4,False,False,,
+Current (Find care),MUMBAI SUBURBAN,emergency_247,,,False,False,True,3.0
 Model 1,MUMBAI SUBURBAN,emergency_247,d4737fdd-c479-4c31-9d34-fc19fd7d7e58,2.307511385265437,False,False,,
 Model 1,MUMBAI SUBURBAN,emergency_247,8b314429-8184-466e-92ca-fbc09eaf349c,3.205950449578331,False,False,,
 Model 1,MUMBAI SUBURBAN,emergency_247,fe23dd4d-7cca-47b3-aad4-293b62e32cb2,6.03546623685395,False,False,,
@@ -4190,9 +4240,9 @@ Combined,MUMBAI SUBURBAN,emergency_247,8b314429-8184-466e-92ca-fbc09eaf349c,3.20
 Combined,MUMBAI SUBURBAN,emergency_247,1a9036cd-9bcc-43af-9abf-31fdbfce6759,4.980841091984227,False,False,,
 Combined,MUMBAI SUBURBAN,emergency_247,fe23dd4d-7cca-47b3-aad4-293b62e32cb2,6.03546623685395,False,False,,
 Combined,MUMBAI SUBURBAN,emergency_247,,,False,False,True,3.0
-Current (Find care),MUMBAI SUBURBAN,cath_lab,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,9.7,False,False,,
-Current (Find care),MUMBAI SUBURBAN,cath_lab,fef4d9b8-5f81-44e9-90e0-c40d17758c92,4.4,False,False,,
 Current (Find care),MUMBAI SUBURBAN,cath_lab,930faaa7-0cbc-4de8-86ae-463dba1a3736,6.9,True,True,,
+Current (Find care),MUMBAI SUBURBAN,cath_lab,fef4d9b8-5f81-44e9-90e0-c40d17758c92,4.4,False,False,,
+Current (Find care),MUMBAI SUBURBAN,cath_lab,3ac5ae50-9ce2-4de3-a13c-d95a4ef218ee,9.7,False,False,,
 Current (Find care),MUMBAI SUBURBAN,cath_lab,,,False,False,True,3.0
 Model 1,MUMBAI SUBURBAN,cath_lab,1a9036cd-9bcc-43af-9abf-31fdbfce6759,4.980841091984227,False,False,,
 Model 1,MUMBAI SUBURBAN,cath_lab,436c7e0a-fd63-4414-9a28-c39ff09d4775,7.901068426320831,True,True,,
@@ -4206,7 +4256,10 @@ Combined,MUMBAI SUBURBAN,cath_lab,1a9036cd-9bcc-43af-9abf-31fdbfce6759,4.9808410
 Combined,MUMBAI SUBURBAN,cath_lab,436c7e0a-fd63-4414-9a28-c39ff09d4775,7.901068426320831,True,True,,
 Combined,MUMBAI SUBURBAN,cath_lab,c6b28bc1-e070-4231-8abe-0cd67e109319,8.825614606001945,False,False,,
 Combined,MUMBAI SUBURBAN,cath_lab,,,False,False,True,3.0
-Current (Find care),MUMBAI SUBURBAN,ent,,,False,False,True,0.0
+Current (Find care),MUMBAI SUBURBAN,ent,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6,True,False,,
+Current (Find care),MUMBAI SUBURBAN,ent,e870fdd8-0b58-4ba5-ad7d-1105df50eb2f,2.0,False,False,,
+Current (Find care),MUMBAI SUBURBAN,ent,745e36ca-5907-4875-b607-bd2328b5a5f4,4.4,False,False,,
+Current (Find care),MUMBAI SUBURBAN,ent,,,False,False,True,3.0
 Model 1,MUMBAI SUBURBAN,ent,ce78597f-1dd1-46c3-b636-caa302b59f0b,0.6234575975952785,True,False,,
 Model 1,MUMBAI SUBURBAN,ent,e870fdd8-0b58-4ba5-ad7d-1105df50eb2f,2.046962585047977,False,False,,
 Model 1,MUMBAI SUBURBAN,ent,99d8aef2-7c02-45cb-b47a-9e2928de8512,2.317972874215976,False,False,,
@@ -4221,7 +4274,7 @@ Combined,MUMBAI SUBURBAN,ent,745e36ca-5907-4875-b607-bd2328b5a5f4,4.369720843983
 Combined,MUMBAI SUBURBAN,ent,,,False,False,True,3.0
 Current (Find care),PALI,xray,7ae37791-7094-498f-a9bd-66fe1d3e8066,75.4,False,False,,
 Current (Find care),PALI,xray,6fb30f40-a08a-483c-be84-c6b8676c6c80,78.7,False,False,,
-Current (Find care),PALI,xray,704f251b-4db7-44bd-8da1-201a78b4cb17,81.9,False,False,,
+Current (Find care),PALI,xray,4b0a57d1-7379-401d-b969-d491ade40c77,80.9,False,False,,
 Current (Find care),PALI,xray,,,False,False,True,3.0
 Model 1,PALI,xray,7ae37791-7094-498f-a9bd-66fe1d3e8066,75.39912100906336,False,False,,
 Model 1,PALI,xray,37fd5d46-e1cb-458e-9a64-9d85dada49ee,80.81619050681422,False,False,,
@@ -4285,7 +4338,7 @@ Combined,PALI,dialysis,704f251b-4db7-44bd-8da1-201a78b4cb17,81.85441321348782,Fa
 Combined,PALI,dialysis,,,False,False,True,3.0
 Current (Find care),PALI,c_section,8de46ac7-edde-480b-96a9-fb39f8c3c8d9,259.2,False,False,,
 Current (Find care),PALI,c_section,e76ffec7-c8e5-45b7-bc51-e7a82b6d4e70,208.2,False,False,,
-Current (Find care),PALI,c_section,d2833710-0cdf-4208-b273-6149a2cf64ec,261.9,False,False,,
+Current (Find care),PALI,c_section,e7cf3511-c4e1-41b0-9a86-b11a6bdfd0e7,252.4,False,False,,
 Current (Find care),PALI,c_section,,,False,False,True,3.0
 Model 1,PALI,c_section,f592e0c7-9d87-4449-98e4-f103abe4f5ac,154.31188434537196,False,False,,
 Model 1,PALI,c_section,87bd1460-4877-4635-b4c9-68e9401afd26,208.44161881509447,False,False,,
@@ -4499,9 +4552,9 @@ Combined,JHANSI,emergency_247,b1cdf356-65b0-4522-a1c2-f528289b1a9e,42.3332446576
 Combined,JHANSI,emergency_247,5d1b4ec5-7f31-4f62-8078-8045f4272910,42.3332446576534,False,False,,
 Combined,JHANSI,emergency_247,8b7a2b68-8d9a-460e-8e09-f84a1f2dabcc,42.3332446576534,False,False,,
 Combined,JHANSI,emergency_247,,,False,False,True,3.0
-Current (Find care),JHANSI,cath_lab,a45cac41-6d27-41ab-878b-7dfb89ec8f33,240.4,False,False,,
-Current (Find care),JHANSI,cath_lab,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,119.7,False,False,,
 Current (Find care),JHANSI,cath_lab,5b4a8ebb-3f70-4f74-aadb-b05bc6aef2ec,212.8,False,False,,
+Current (Find care),JHANSI,cath_lab,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,119.7,False,False,,
+Current (Find care),JHANSI,cath_lab,a45cac41-6d27-41ab-878b-7dfb89ec8f33,240.4,False,False,,
 Current (Find care),JHANSI,cath_lab,,,False,False,True,3.0
 Model 1,JHANSI,cath_lab,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,119.72491791427903,False,False,,
 Model 1,JHANSI,cath_lab,9e6e1baf-e632-4b83-97cf-fad2300aa110,168.44631196214635,False,False,,
@@ -4577,7 +4630,7 @@ Combined,RAYAGADA,ct_scan,30494fe0-d130-4168-84a5-02b78a773940,257.5313824703036
 Combined,RAYAGADA,ct_scan,,,False,False,True,3.0
 Current (Find care),RAYAGADA,dialysis,30494fe0-d130-4168-84a5-02b78a773940,257.5,False,False,,
 Current (Find care),RAYAGADA,dialysis,a2b78c16-2473-440b-8e3e-f00883ec7f0c,173.1,False,False,,
-Current (Find care),RAYAGADA,dialysis,3f6542b5-2ab1-4602-aa55-45ac9fa77975,268.0,False,False,,
+Current (Find care),RAYAGADA,dialysis,268245b0-e431-4655-8042-bb45df37479e,249.6,False,False,,
 Current (Find care),RAYAGADA,dialysis,,,False,False,True,3.0
 Model 1,RAYAGADA,dialysis,2e854012-5d01-4eef-a916-3965bbf466cc,175.05165590360397,False,False,,
 Model 1,RAYAGADA,dialysis,2831f4e7-9111-4ec4-827f-f6cc067f958a,174.94707463389784,False,False,,
@@ -4607,7 +4660,10 @@ Combined,RAYAGADA,c_section,ae20b125-7b8f-4851-89a7-06480eea6bd4,270.79772178699
 Combined,RAYAGADA,c_section,257efb93-0148-431c-a2d0-c81e8dbff406,176.21150588375684,False,False,,
 Combined,RAYAGADA,c_section,04bae564-9f3f-4b55-8854-3bfd587793a8,273.17784730977627,False,False,,
 Combined,RAYAGADA,c_section,,,False,False,True,3.0
-Current (Find care),RAYAGADA,nicu,,,False,False,True,0.0
+Current (Find care),RAYAGADA,nicu,e3209079-d461-41f2-8ceb-581a2c893c48,32.8,False,False,,
+Current (Find care),RAYAGADA,nicu,e560416e-5708-4b58-84bf-3ed54c2ebf79,121.9,False,False,,
+Current (Find care),RAYAGADA,nicu,88e98821-511f-4a17-84dd-c8207b9fb108,123.1,True,False,,
+Current (Find care),RAYAGADA,nicu,,,False,False,True,3.0
 Model 1,RAYAGADA,nicu,88e98821-511f-4a17-84dd-c8207b9fb108,123.05367506653174,True,False,,
 Model 1,RAYAGADA,nicu,,,False,False,True,1.0
 Model 2,RAYAGADA,nicu,e3209079-d461-41f2-8ceb-581a2c893c48,32.76305359182027,False,False,,
@@ -4630,7 +4686,10 @@ Combined,RAYAGADA,icu,9226ba4b-c128-413e-91df-632e02b26dd6,259.69147633833904,Fa
 Combined,RAYAGADA,icu,3f6542b5-2ab1-4602-aa55-45ac9fa77975,267.95558680093353,False,False,,
 Combined,RAYAGADA,icu,3c590646-164c-4148-a1d8-d40dce243086,294.0042050474094,False,False,,
 Combined,RAYAGADA,icu,,,False,False,True,3.0
-Current (Find care),RAYAGADA,emergency_247,,,False,False,True,0.0
+Current (Find care),RAYAGADA,emergency_247,e3209079-d461-41f2-8ceb-581a2c893c48,32.8,False,False,,
+Current (Find care),RAYAGADA,emergency_247,e560416e-5708-4b58-84bf-3ed54c2ebf79,121.9,False,False,,
+Current (Find care),RAYAGADA,emergency_247,6d003e18-a4d8-482f-babf-acfbfc6f1bf1,129.9,False,False,,
+Current (Find care),RAYAGADA,emergency_247,,,False,False,True,3.0
 Model 1,RAYAGADA,emergency_247,e3209079-d461-41f2-8ceb-581a2c893c48,32.76305359182027,False,False,,
 Model 1,RAYAGADA,emergency_247,4d6863dc-85f9-4fa5-94a2-715bb4a4c3d3,87.82520391251192,False,False,,
 Model 1,RAYAGADA,emergency_247,e560416e-5708-4b58-84bf-3ed54c2ebf79,121.91779851200546,False,False,,
@@ -4677,7 +4736,7 @@ Combined,RAYAGADA,ent,2831f4e7-9111-4ec4-827f-f6cc067f958a,174.94707463389784,Fa
 Combined,RAYAGADA,ent,,,False,False,True,3.0
 Current (Find care),NALANDA,xray,acb49d43-cff0-4aa7-81ab-9a64e646f818,50.7,True,True,,
 Current (Find care),NALANDA,xray,48ce17b0-6475-4126-aaa0-2113ac28d180,34.6,False,False,,
-Current (Find care),NALANDA,xray,c105191a-45ea-4b81-933c-419f5cb07cfa,51.6,False,False,,
+Current (Find care),NALANDA,xray,b9b368df-eb24-42dd-887d-f3c1270031f9,50.8,False,False,,
 Current (Find care),NALANDA,xray,,,False,False,True,3.0
 Model 1,NALANDA,xray,e85087f5-cc4a-4746-a81a-57d1b0f91314,49.17280660784553,False,False,,
 Model 1,NALANDA,xray,3d9efe83-3639-4d59-9ddb-f81c4eb10304,49.487083618397584,True,False,,
@@ -4773,7 +4832,7 @@ Combined,NALANDA,nicu,fc9cdea1-23bf-4180-872a-44335e348fb4,49.784303923614495,Fa
 Combined,NALANDA,nicu,,,False,False,True,3.0
 Current (Find care),NALANDA,icu,acb49d43-cff0-4aa7-81ab-9a64e646f818,50.7,True,True,,
 Current (Find care),NALANDA,icu,48ce17b0-6475-4126-aaa0-2113ac28d180,34.6,False,False,,
-Current (Find care),NALANDA,icu,e8396ece-9b70-4b1f-aa01-85d88ecbc9c3,51.4,True,True,,
+Current (Find care),NALANDA,icu,b9b368df-eb24-42dd-887d-f3c1270031f9,50.8,False,False,,
 Current (Find care),NALANDA,icu,,,False,False,True,3.0
 Model 1,NALANDA,icu,3d9efe83-3639-4d59-9ddb-f81c4eb10304,49.487083618397584,True,False,,
 Model 1,NALANDA,icu,acb49d43-cff0-4aa7-81ab-9a64e646f818,50.67648558720369,True,True,,
@@ -4883,9 +4942,9 @@ Combined,MORENA,ct_scan,65d4d5b6-9530-4ed5-829a-ed783b5f204f,78.65547486781215,F
 Combined,MORENA,ct_scan,b182c5ca-96e3-4a09-bd5a-91b603d90eed,38.74851922623794,False,False,,
 Combined,MORENA,ct_scan,bb65705c-1ba3-47c6-b14e-23d2e27490e6,39.67601432782173,False,False,,
 Combined,MORENA,ct_scan,,,False,False,True,3.0
-Current (Find care),MORENA,dialysis,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.0,False,False,,
-Current (Find care),MORENA,dialysis,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,38.0,False,False,,
 Current (Find care),MORENA,dialysis,621c1afc-0275-4c3c-8c2f-93fc4b86713b,39.1,False,False,,
+Current (Find care),MORENA,dialysis,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,38.0,False,False,,
+Current (Find care),MORENA,dialysis,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.0,False,False,,
 Current (Find care),MORENA,dialysis,,,False,False,True,3.0
 Model 1,MORENA,dialysis,621c1afc-0275-4c3c-8c2f-93fc4b86713b,39.088479280660295,False,False,,
 Model 1,MORENA,dialysis,146f12e6-933d-4522-a5a4-d4110b3ecc38,39.61538718753915,False,False,,
@@ -4917,7 +4976,7 @@ Combined,MORENA,c_section,02677523-f32c-421a-8d36-adadba9cbf8f,76.25668610878323
 Combined,MORENA,c_section,,,False,False,True,3.0
 Current (Find care),MORENA,nicu,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.0,False,False,,
 Current (Find care),MORENA,nicu,423f36f8-4480-4ae7-91cf-bc0710dc9a48,35.7,False,False,,
-Current (Find care),MORENA,nicu,5b4a8ebb-3f70-4f74-aadb-b05bc6aef2ec,72.5,False,False,,
+Current (Find care),MORENA,nicu,e376a79d-9406-4b86-a7d3-9120d56b4011,38.1,False,False,,
 Current (Find care),MORENA,nicu,,,False,False,True,3.0
 Model 1,MORENA,nicu,d71e18cb-97d8-4c08-84c7-1eb44c0e87fa,69.90043952601978,False,False,,
 Model 1,MORENA,nicu,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.02932298277159,False,False,,
@@ -4931,7 +4990,7 @@ Combined,MORENA,nicu,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.02932298277159,Fals
 Combined,MORENA,nicu,f8467b61-8fa5-4ada-83d1-acfa0a7b4c18,77.16508632636287,False,False,,
 Combined,MORENA,nicu,6efe95fc-c138-40fc-b078-54f993efe916,78.74372871811705,False,False,,
 Combined,MORENA,nicu,,,False,False,True,3.0
-Current (Find care),MORENA,icu,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.0,False,False,,
+Current (Find care),MORENA,icu,f16265a0-e035-44a6-99a5-09390c581a44,38.3,False,False,,
 Current (Find care),MORENA,icu,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,38.0,False,False,,
 Current (Find care),MORENA,icu,621c1afc-0275-4c3c-8c2f-93fc4b86713b,39.1,False,False,,
 Current (Find care),MORENA,icu,,,False,False,True,3.0
@@ -4949,7 +5008,7 @@ Combined,MORENA,icu,bb65705c-1ba3-47c6-b14e-23d2e27490e6,39.67601432782173,False
 Combined,MORENA,icu,,,False,False,True,3.0
 Current (Find care),MORENA,emergency_247,b950231d-189b-4244-b453-87f34ac5a68c,38.6,False,False,,
 Current (Find care),MORENA,emergency_247,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,38.0,False,False,,
-Current (Find care),MORENA,emergency_247,39a3c23b-3698-4b55-ab14-53b3ec23fa63,73.0,False,False,,
+Current (Find care),MORENA,emergency_247,f16265a0-e035-44a6-99a5-09390c581a44,38.3,False,False,,
 Current (Find care),MORENA,emergency_247,,,False,False,True,3.0
 Model 1,MORENA,emergency_247,f16265a0-e035-44a6-99a5-09390c581a44,38.25320577539009,False,False,,
 Model 1,MORENA,emergency_247,146f12e6-933d-4522-a5a4-d4110b3ecc38,39.61538718753915,False,False,,
@@ -4981,7 +5040,7 @@ Combined,MORENA,cath_lab,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,37.998406346178825
 Combined,MORENA,cath_lab,,,False,False,True,3.0
 Current (Find care),MORENA,ent,621c1afc-0275-4c3c-8c2f-93fc4b86713b,39.1,False,False,,
 Current (Find care),MORENA,ent,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,38.0,False,False,,
-Current (Find care),MORENA,ent,5b4a8ebb-3f70-4f74-aadb-b05bc6aef2ec,72.5,False,False,,
+Current (Find care),MORENA,ent,e376a79d-9406-4b86-a7d3-9120d56b4011,38.1,False,False,,
 Current (Find care),MORENA,ent,,,False,False,True,3.0
 Model 1,MORENA,ent,5c1c445c-22ef-4aeb-bbaa-4bb4d0dfb670,37.998406346178825,False,False,,
 Model 1,MORENA,ent,44932e8d-8f48-4053-8d53-250351928df7,39.39640794069843,False,False,,
@@ -5406,7 +5465,10 @@ Combined,MUZAFFARPUR,nicu,c105191a-45ea-4b81-933c-419f5cb07cfa,61.9823464384868,
 Combined,MUZAFFARPUR,nicu,2dccd2d1-a1e2-443f-91b8-34452bb60e69,1.2421356731837814,False,False,,
 Combined,MUZAFFARPUR,nicu,144d7908-e83b-45de-99f9-c52779fd8d38,53.85981402316026,False,False,,
 Combined,MUZAFFARPUR,nicu,,,False,False,True,3.0
-Current (Find care),MUZAFFARPUR,icu,,,False,False,True,0.0
+Current (Find care),MUZAFFARPUR,icu,a133cdd5-54ec-4d82-8743-d2ea8633aeea,0.3,False,False,,
+Current (Find care),MUZAFFARPUR,icu,a7cb46eb-417e-4c10-aab7-119b76fc0507,1.0,False,False,,
+Current (Find care),MUZAFFARPUR,icu,2dccd2d1-a1e2-443f-91b8-34452bb60e69,1.2,False,False,,
+Current (Find care),MUZAFFARPUR,icu,,,False,False,True,3.0
 Model 1,MUZAFFARPUR,icu,b3796a39-9013-49fe-9068-e36c933fc49f,53.50363956378905,False,False,,
 Model 1,MUZAFFARPUR,icu,acb49d43-cff0-4aa7-81ab-9a64e646f818,61.276537332142546,True,True,,
 Model 1,MUZAFFARPUR,icu,d90d776c-7b1e-4bb7-abe4-5d5c6e6e0a7c,61.309951599962595,False,False,,
@@ -5468,7 +5530,7 @@ Combined,MUZAFFARPUR,ent,dad3fe96-004c-40f4-abf3-18b2f7587bc4,61.87645237162316,
 Combined,MUZAFFARPUR,ent,,,False,False,True,3.0
 Current (Find care),KANCHIPURAM,xray,309e1dd4-ae1c-400a-a94f-4d31c3794fd2,36.2,False,False,,
 Current (Find care),KANCHIPURAM,xray,3c2c5f60-285a-4831-87cc-df70778603cd,33.2,False,False,,
-Current (Find care),KANCHIPURAM,xray,86239f9a-871e-4a4d-b929-8863aa07db03,52.4,False,False,,
+Current (Find care),KANCHIPURAM,xray,831fc382-35c5-40b7-94c4-d81420f03dd2,43.6,False,False,,
 Current (Find care),KANCHIPURAM,xray,,,False,False,True,3.0
 Model 1,KANCHIPURAM,xray,3c2c5f60-285a-4831-87cc-df70778603cd,33.24266477360748,False,False,,
 Model 1,KANCHIPURAM,xray,69aa0e3e-f569-4588-92a8-385f49a3162b,35.24001421034473,False,False,,
@@ -5484,7 +5546,7 @@ Combined,KANCHIPURAM,xray,0ed7fc50-4be6-4040-a10c-0aa531e055f1,72.14083965681024
 Combined,KANCHIPURAM,xray,,,False,False,True,3.0
 Current (Find care),KANCHIPURAM,ultrasound,54946f79-25d8-40a7-b43b-9e41b888fd5d,46.7,False,False,,
 Current (Find care),KANCHIPURAM,ultrasound,3c2c5f60-285a-4831-87cc-df70778603cd,33.2,False,False,,
-Current (Find care),KANCHIPURAM,ultrasound,86239f9a-871e-4a4d-b929-8863aa07db03,52.4,False,False,,
+Current (Find care),KANCHIPURAM,ultrasound,831fc382-35c5-40b7-94c4-d81420f03dd2,43.6,False,False,,
 Current (Find care),KANCHIPURAM,ultrasound,,,False,False,True,3.0
 Model 1,KANCHIPURAM,ultrasound,831fc382-35c5-40b7-94c4-d81420f03dd2,43.60737248628767,False,False,,
 Model 1,KANCHIPURAM,ultrasound,64226e26-49ab-492e-a05c-fb00bb99ede1,44.651082789381974,False,False,,
@@ -5612,7 +5674,7 @@ Combined,KANCHIPURAM,cath_lab,cbaa2ec7-be7f-4b9b-aa84-d91f1e49ae18,46.6073046877
 Combined,KANCHIPURAM,cath_lab,,,False,False,True,3.0
 Current (Find care),KANCHIPURAM,ent,309e1dd4-ae1c-400a-a94f-4d31c3794fd2,36.2,False,False,,
 Current (Find care),KANCHIPURAM,ent,619c94ea-7a57-4e4b-b4a7-9f9364b9787f,37.7,True,True,,
-Current (Find care),KANCHIPURAM,ent,86239f9a-871e-4a4d-b929-8863aa07db03,52.4,False,False,,
+Current (Find care),KANCHIPURAM,ent,831fc382-35c5-40b7-94c4-d81420f03dd2,43.6,False,False,,
 Current (Find care),KANCHIPURAM,ent,,,False,False,True,3.0
 Model 1,KANCHIPURAM,ent,309e1dd4-ae1c-400a-a94f-4d31c3794fd2,36.19187088618437,False,False,,
 Model 1,KANCHIPURAM,ent,0ed06201-4757-458e-afc3-e4dd6ead237f,43.83683741586251,False,False,,
@@ -5706,7 +5768,10 @@ Combined,PATHANKOT,c_section,51d31015-8f2c-4f5a-b86d-81aa213a7939,97.56821654919
 Combined,PATHANKOT,c_section,20b34829-cc01-4eec-974b-80166d27c50b,99.41733936572689,False,False,,
 Combined,PATHANKOT,c_section,e47929b1-a070-4278-9958-fd8290d0e8ba,99.97646799214561,False,False,,
 Combined,PATHANKOT,c_section,,,False,False,True,3.0
-Current (Find care),PATHANKOT,nicu,,,False,False,True,0.0
+Current (Find care),PATHANKOT,nicu,427dcbf8-47d8-46fa-9128-579cdbd61791,3.5,False,False,,
+Current (Find care),PATHANKOT,nicu,44ff9137-694c-4628-88e2-35305eb1b638,81.0,False,False,,
+Current (Find care),PATHANKOT,nicu,685f1cac-339f-48f0-8717-79d614f5b2e8,88.9,False,False,,
+Current (Find care),PATHANKOT,nicu,,,False,False,True,3.0
 Model 1,PATHANKOT,nicu,3c3bef49-f54f-461f-a871-e648b80df7dc,85.12953941598286,False,False,,
 Model 1,PATHANKOT,nicu,20b34829-cc01-4eec-974b-80166d27c50b,99.41733936572689,False,False,,
 Model 1,PATHANKOT,nicu,c30390ca-46be-4d44-aec8-5234629f4688,98.81265428811295,True,False,,
@@ -5782,8 +5847,8 @@ Combined,PATHANKOT,ent,83f1bfc7-fb4a-4ff9-9f33-34ddf58fda1b,81.64964913606163,Fa
 Combined,PATHANKOT,ent,685f1cac-339f-48f0-8717-79d614f5b2e8,88.92884663710767,False,False,,
 Combined,PATHANKOT,ent,e47929b1-a070-4278-9958-fd8290d0e8ba,99.97646799214561,False,False,,
 Combined,PATHANKOT,ent,,,False,False,True,3.0
-Current (Find care),SONEPUR,xray,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,xray,28726757-41f1-43c5-9556-e3ce109a67b5,49.6,False,False,,
+Current (Find care),SONEPUR,xray,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,xray,0f8375e1-a47c-4959-94c5-313e0e2512a1,115.2,False,False,,
 Current (Find care),SONEPUR,xray,,,False,False,True,3.0
 Model 1,SONEPUR,xray,28726757-41f1-43c5-9556-e3ce109a67b5,49.62802812829877,False,False,,
@@ -5814,8 +5879,8 @@ Combined,SONEPUR,ultrasound,28726757-41f1-43c5-9556-e3ce109a67b5,49.628028128298
 Combined,SONEPUR,ultrasound,b366b14a-9028-48aa-91e1-25b6b382a12a,68.27031163557965,False,False,,
 Combined,SONEPUR,ultrasound,01f4526c-02a1-45d7-a99f-8b4146ee42fb,146.90874017896223,False,False,,
 Combined,SONEPUR,ultrasound,,,False,False,True,3.0
-Current (Find care),SONEPUR,ct_scan,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,ct_scan,28726757-41f1-43c5-9556-e3ce109a67b5,49.6,False,False,,
+Current (Find care),SONEPUR,ct_scan,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,ct_scan,c35dabaa-544a-4d93-9405-b5444ed0bab3,219.5,False,False,,
 Current (Find care),SONEPUR,ct_scan,,,False,False,True,3.0
 Model 1,SONEPUR,ct_scan,28726757-41f1-43c5-9556-e3ce109a67b5,49.62802812829877,False,False,,
@@ -5878,8 +5943,8 @@ Combined,SONEPUR,nicu,c57fbffb-29af-4533-9ea3-6a3fb73715cb,221.77222835696577,Fa
 Combined,SONEPUR,nicu,6c7797e4-06e6-4e84-a278-9eca339c24bd,230.10051209602545,False,False,,
 Combined,SONEPUR,nicu,36556485-61f1-44a2-9d39-361a5cd6925d,249.22249436052914,False,False,,
 Combined,SONEPUR,nicu,,,False,False,True,3.0
-Current (Find care),SONEPUR,icu,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,icu,28726757-41f1-43c5-9556-e3ce109a67b5,49.6,False,False,,
+Current (Find care),SONEPUR,icu,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,icu,b366b14a-9028-48aa-91e1-25b6b382a12a,68.3,False,False,,
 Current (Find care),SONEPUR,icu,,,False,False,True,3.0
 Model 1,SONEPUR,icu,b366b14a-9028-48aa-91e1-25b6b382a12a,68.27031163557965,False,False,,
@@ -5911,7 +5976,7 @@ Combined,SONEPUR,emergency_247,a86fecfe-d81f-4f00-86ea-843166b1f212,66.507116431
 Combined,SONEPUR,emergency_247,,,False,False,True,3.0
 Current (Find care),SONEPUR,cath_lab,3c590646-164c-4148-a1d8-d40dce243086,113.3,False,False,,
 Current (Find care),SONEPUR,cath_lab,b366b14a-9028-48aa-91e1-25b6b382a12a,68.3,False,False,,
-Current (Find care),SONEPUR,cath_lab,3d4c1b68-7402-427c-922c-adbf52bd7dab,225.6,False,False,,
+Current (Find care),SONEPUR,cath_lab,3f6542b5-2ab1-4602-aa55-45ac9fa77975,223.9,False,False,,
 Current (Find care),SONEPUR,cath_lab,,,False,False,True,3.0
 Model 1,SONEPUR,cath_lab,b366b14a-9028-48aa-91e1-25b6b382a12a,68.27031163557965,False,False,,
 Model 1,SONEPUR,cath_lab,3c590646-164c-4148-a1d8-d40dce243086,113.34315991242342,False,False,,
@@ -5989,7 +6054,7 @@ Combined,THRISSUR,ct_scan,8e687a2c-4a9f-4fb8-a5f9-2cb78043c1fa,49.27084471018585
 Combined,THRISSUR,ct_scan,,,False,False,True,3.0
 Current (Find care),THRISSUR,dialysis,2df6f4a7-0d87-460c-a0df-05ef4ebe91bf,3.8,False,False,,
 Current (Find care),THRISSUR,dialysis,69800946-d2f5-4db6-abe3-17b0f105bdca,12.3,False,False,,
-Current (Find care),THRISSUR,dialysis,3e34bd09-94f3-410d-9cf3-ba680f5874c3,39.7,False,False,,
+Current (Find care),THRISSUR,dialysis,000fbd01-b3f3-41a6-815a-f58f3321ef9b,14.2,False,False,,
 Current (Find care),THRISSUR,dialysis,,,False,False,True,3.0
 Model 1,THRISSUR,dialysis,2df6f4a7-0d87-460c-a0df-05ef4ebe91bf,3.7571793031801928,False,False,,
 Model 1,THRISSUR,dialysis,000fbd01-b3f3-41a6-815a-f58f3321ef9b,14.208212574186222,False,False,,
@@ -6085,7 +6150,7 @@ Combined,THRISSUR,cath_lab,3e34bd09-94f3-410d-9cf3-ba680f5874c3,39.686519124938,
 Combined,THRISSUR,cath_lab,,,False,False,True,3.0
 Current (Find care),THRISSUR,ent,59299a8f-ecd2-4e17-a5c3-68e793f8cdf2,13.6,False,False,,
 Current (Find care),THRISSUR,ent,66bf8448-a7eb-4d42-9102-2acb4ef04f7c,4.7,False,False,,
-Current (Find care),THRISSUR,ent,3e34bd09-94f3-410d-9cf3-ba680f5874c3,39.7,False,False,,
+Current (Find care),THRISSUR,ent,000fbd01-b3f3-41a6-815a-f58f3321ef9b,14.2,False,False,,
 Current (Find care),THRISSUR,ent,,,False,False,True,3.0
 Model 1,THRISSUR,ent,b40a22c8-ee80-49b9-83c4-6092060a6949,14.368509994307614,False,False,,
 Model 1,THRISSUR,ent,1d0b6d92-4823-4c1d-bfb9-79f0258ea2cf,34.322111511221934,False,False,,
@@ -6099,7 +6164,10 @@ Combined,THRISSUR,ent,b40a22c8-ee80-49b9-83c4-6092060a6949,14.368509994307614,Fa
 Combined,THRISSUR,ent,3e34bd09-94f3-410d-9cf3-ba680f5874c3,39.686519124938,False,False,,
 Combined,THRISSUR,ent,f14cec09-86d6-4264-a26a-0e74b6a524a1,41.75570996708475,False,False,,
 Combined,THRISSUR,ent,,,False,False,True,3.0
-Current (Find care),KABIRDHAM,xray,,,False,False,True,0.0
+Current (Find care),KABIRDHAM,xray,26793603-5819-4186-a17d-f1c40f0da996,12.2,False,False,,
+Current (Find care),KABIRDHAM,xray,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.6,False,False,,
+Current (Find care),KABIRDHAM,xray,61d762e6-570a-45e7-8425-c03693b2d485,88.3,False,False,,
+Current (Find care),KABIRDHAM,xray,,,False,False,True,3.0
 Model 1,KABIRDHAM,xray,26793603-5819-4186-a17d-f1c40f0da996,12.213920797557035,False,False,,
 Model 1,KABIRDHAM,xray,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.61641399552113,False,False,,
 Model 1,KABIRDHAM,xray,76153087-76b8-4c9a-81a6-f272ded7f31a,84.69115938633819,False,False,,
@@ -6112,7 +6180,10 @@ Combined,KABIRDHAM,xray,71c2354c-7ba8-459a-8132-890c6053ff5c,98.83002685167105,F
 Combined,KABIRDHAM,xray,26793603-5819-4186-a17d-f1c40f0da996,12.213920797557035,False,False,,
 Combined,KABIRDHAM,xray,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.61641399552113,False,False,,
 Combined,KABIRDHAM,xray,,,False,False,True,3.0
-Current (Find care),KABIRDHAM,ultrasound,,,False,False,True,0.0
+Current (Find care),KABIRDHAM,ultrasound,26793603-5819-4186-a17d-f1c40f0da996,12.2,False,False,,
+Current (Find care),KABIRDHAM,ultrasound,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.6,False,False,,
+Current (Find care),KABIRDHAM,ultrasound,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.6,False,False,,
+Current (Find care),KABIRDHAM,ultrasound,,,False,False,True,3.0
 Model 1,KABIRDHAM,ultrasound,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.61641399552113,False,False,,
 Model 1,KABIRDHAM,ultrasound,aa6139b9-1bfc-4e05-9da0-7fdb017de375,87.83610436574651,False,False,,
 Model 1,KABIRDHAM,ultrasound,2c8d4f82-a0c1-42aa-a7cf-35ef0d7df343,99.52868763167774,False,False,,
@@ -6157,7 +6228,10 @@ Combined,KABIRDHAM,dialysis,3d4c1b68-7402-427c-922c-adbf52bd7dab,98.544064684182
 Combined,KABIRDHAM,dialysis,70ed22f8-2a65-49c0-b3b4-0464c1a33489,83.57231270974411,False,False,,
 Combined,KABIRDHAM,dialysis,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.61641399552113,False,False,,
 Combined,KABIRDHAM,dialysis,,,False,False,True,3.0
-Current (Find care),KABIRDHAM,c_section,,,False,False,True,0.0
+Current (Find care),KABIRDHAM,c_section,26793603-5819-4186-a17d-f1c40f0da996,12.2,False,False,,
+Current (Find care),KABIRDHAM,c_section,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.6,False,False,,
+Current (Find care),KABIRDHAM,c_section,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.6,False,False,,
+Current (Find care),KABIRDHAM,c_section,,,False,False,True,3.0
 Model 1,KABIRDHAM,c_section,26793603-5819-4186-a17d-f1c40f0da996,12.213920797557035,False,False,,
 Model 1,KABIRDHAM,c_section,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.63337232888359,False,False,,
 Model 1,KABIRDHAM,c_section,76c77c05-0978-4e19-b41f-1fc23b28cfe0,69.61641399552113,False,False,,
@@ -6185,7 +6259,10 @@ Model 2,KABIRDHAM,nicu,,,False,False,True,3.0
 Combined,KABIRDHAM,nicu,70ed22f8-2a65-49c0-b3b4-0464c1a33489,83.57231270974411,False,False,,
 Combined,KABIRDHAM,nicu,71c2354c-7ba8-459a-8132-890c6053ff5c,98.83002685167105,False,False,,
 Combined,KABIRDHAM,nicu,,,False,False,True,2.0
-Current (Find care),KABIRDHAM,icu,,,False,False,True,0.0
+Current (Find care),KABIRDHAM,icu,26793603-5819-4186-a17d-f1c40f0da996,12.2,False,False,,
+Current (Find care),KABIRDHAM,icu,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.6,False,False,,
+Current (Find care),KABIRDHAM,icu,61d762e6-570a-45e7-8425-c03693b2d485,88.3,False,False,,
+Current (Find care),KABIRDHAM,icu,,,False,False,True,3.0
 Model 1,KABIRDHAM,icu,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.63337232888359,False,False,,
 Model 1,KABIRDHAM,icu,70ed22f8-2a65-49c0-b3b4-0464c1a33489,83.57231270974411,False,False,,
 Model 1,KABIRDHAM,icu,2828b1dd-c7fa-4c67-a4da-3b193849d6c6,84.73421181036099,False,False,,
@@ -6198,7 +6275,10 @@ Combined,KABIRDHAM,icu,3d4c1b68-7402-427c-922c-adbf52bd7dab,98.54406468418208,Fa
 Combined,KABIRDHAM,icu,f995d517-e18b-4337-a0a5-3cfebc68661b,98.7341242710678,False,False,,
 Combined,KABIRDHAM,icu,71c2354c-7ba8-459a-8132-890c6053ff5c,98.83002685167105,False,False,,
 Combined,KABIRDHAM,icu,,,False,False,True,3.0
-Current (Find care),KABIRDHAM,emergency_247,,,False,False,True,0.0
+Current (Find care),KABIRDHAM,emergency_247,26793603-5819-4186-a17d-f1c40f0da996,12.2,False,False,,
+Current (Find care),KABIRDHAM,emergency_247,e07deb30-384c-468b-bd0e-cd4e54ad65ca,39.6,False,False,,
+Current (Find care),KABIRDHAM,emergency_247,61d762e6-570a-45e7-8425-c03693b2d485,88.3,False,False,,
+Current (Find care),KABIRDHAM,emergency_247,,,False,False,True,3.0
 Model 1,KABIRDHAM,emergency_247,70ed22f8-2a65-49c0-b3b4-0464c1a33489,83.57231270974411,False,False,,
 Model 1,KABIRDHAM,emergency_247,9dd1aabb-ed3a-44e1-aa74-3a0340378791,86.01452809438752,False,False,,
 Model 1,KABIRDHAM,emergency_247,ca2d0d2c-9068-4889-8c5a-d26dc124ef68,87.31352705808202,False,False,,
@@ -6227,7 +6307,10 @@ Combined,KABIRDHAM,cath_lab,3d4c1b68-7402-427c-922c-adbf52bd7dab,98.544064684182
 Combined,KABIRDHAM,cath_lab,71c2354c-7ba8-459a-8132-890c6053ff5c,98.83002685167105,False,False,,
 Combined,KABIRDHAM,cath_lab,64b04955-1b6c-47d7-b22d-1c9a20af1c6b,87.00866465589496,False,False,,
 Combined,KABIRDHAM,cath_lab,,,False,False,True,3.0
-Current (Find care),KABIRDHAM,ent,,,False,False,True,0.0
+Current (Find care),KABIRDHAM,ent,26793603-5819-4186-a17d-f1c40f0da996,12.2,False,False,,
+Current (Find care),KABIRDHAM,ent,61d762e6-570a-45e7-8425-c03693b2d485,88.3,False,False,,
+Current (Find care),KABIRDHAM,ent,58887b03-b8f9-44c8-bf81-89f7e85b7c3d,96.7,False,False,,
+Current (Find care),KABIRDHAM,ent,,,False,False,True,3.0
 Model 1,KABIRDHAM,ent,61d762e6-570a-45e7-8425-c03693b2d485,88.25899839023275,False,False,,
 Model 1,KABIRDHAM,ent,d6d7b774-ea7c-4f42-b148-e5751f5be97f,89.9336688375978,False,False,,
 Model 1,KABIRDHAM,ent,e43a21d0-8c78-436d-9656-39418b1fbf16,97.92458505937682,False,False,,
