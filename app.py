@@ -42,12 +42,14 @@ LOGO = """<svg width="58" height="58" viewBox="0 0 64 64" role="img" aria-label=
   <rect x="30.4" y="27.5" width="3.2" height="9" rx="1" fill="#C62828"/>
   <rect x="27.5" y="30.4" width="9" height="3.2" rx="1" fill="#C62828"/>
 </svg>"""
+# Model 1 / Model 2 / Combined comparison tabs: hidden unless the "Judge view" toggle (top-right corner) is on
+with st.container(key="judge"):
+    SHOW_MODEL_TABS = st.toggle("Judge view", key="judge_view", help="Show the Model 1 / Model 2 / Combined comparison tabs")
 st.markdown(f"""<div class="cc-brand">{LOGO}<div><div class="cc-brand-name">CareCompass</div>
 <div class="cc-brand-tag">Find who can treat the patient — then call in order.</div></div></div>""",
             unsafe_allow_html=True)
 
 SHOW_EXTRA_TABS = False      # Care deserts + About the data are hidden (code kept); set True to show them again
-SHOW_MODEL_TABS = False      # Model 1 / Model 2 / Combined comparison tabs are hidden (code kept)
 _tab_names = (["Find care"]
               + (["Model 1", "Model 2", "Combined"] if SHOW_MODEL_TABS else [])
               + (["Care deserts", "About the data"] if SHOW_EXTRA_TABS else []))
@@ -77,6 +79,7 @@ except Exception:
 st.markdown("""<style>
 html {font-size: 18px;}
 .block-container {max-width: 1020px; padding-top: 3.6rem;}
+.st-key-judge {display:flex; flex-direction:row; justify-content:flex-end; margin-bottom:-1rem;}
 .cc-brand {display:flex; align-items:center; gap:.8rem; margin:.2rem 0 .6rem 0;}
 .cc-brand-name {font-size:2.1rem; font-weight:800; color:#1E2A4A; line-height:1.05;}
 .cc-brand-tag {font-size:.95rem; color:#55627A;}
@@ -548,10 +551,6 @@ with find_tab:
                         st.rerun()
     st.markdown("<div class='cc-help'>A condition like 'broken arm' or a service like 'dialysis'.</div>",
                 unsafe_allow_html=True)
-    if HAVE_SEARCHBOX and not st.session_state.get("plain_box"):
-        if st.button("Search box not working? Use a simple text box", key="use_plain", type="tertiary"):
-            st.session_state["plain_box"] = True
-            st.rerun()
 
     if st.session_state.get("llm_error"):
         st.warning(st.session_state.pop("llm_error"))
@@ -560,7 +559,7 @@ with find_tab:
 
     if s["ids"]:
         names = caps.catalog()["by_id"]
-        keep = st.pills("Selected — a facility must offer all of these (tap to remove)", options=s["ids"],
+        keep = st.pills("Selected", options=s["ids"],
                         default=s["ids"], selection_mode="multi", format_func=lambda i: names[i]["name"],
                         key=f"chips_{'-'.join(s['ids'])}")
         if set(keep) != set(s["ids"]):

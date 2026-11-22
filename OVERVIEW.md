@@ -9,7 +9,7 @@
 A coordinator types **what the patient needs** and **where they are**, and gets a **call plan**: three facilities to call in order, what to ask each, a government fallback, and a referral slip to send the family.
 
 ### Tabs
-The app has one view, Find care. Model 1, Model 2 and Combined were built and evaluated (see Results) but are hidden in the app (`SHOW_MODEL_TABS = False` in `app.py`).
+The app opens on one view, Find care. Model 1, Model 2 and Combined were built and evaluated (see Results); they are hidden by default. Turn on the **Judge view** toggle (top-right corner) to show them as extra tabs.
 
 *Care deserts* and *About the data* are hidden (`SHOW_EXTRA_TABS = False` in `app.py`; code kept, not executed).
 
