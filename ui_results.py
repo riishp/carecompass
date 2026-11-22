@@ -147,10 +147,10 @@ def trust_chips(r, row, urgency, fc):
     _, _, valid = phone_info(r, row)
     chips.append(("ok", "Phone number valid") if valid else ("warn", "No valid phone number"))
     dm = str(row.get("directory_match") or "NONE")
-    chips.append(("ok", "In government hospital directory") if dm == "STRONG" else
-                 ("warn", "Not in government directory") if dm == "NONE" else
-                 ("warn", "Government directory match unverified") if dm == "UNVERIFIED" else
-                 ("warn", "Possible government directory match"))
+    if dm == "STRONG":
+        chips.append(("ok", "In government hospital directory"))
+    elif dm == "UNVERIFIED":
+        chips.append(("warn", "Government directory match unverified"))
     chips.append(("warn", "Services text looks like a shared template") if bool(row.get("possible_boilerplate"))
                  else ("ok", "Branch-specific service details"))
     if urgency == "emergency":
@@ -241,6 +241,10 @@ def build_view(out, fc):
     loc = out.get("location_resolution") or {}
     radius = float(how.get("final_search_radius_km") or 100.0)
     govt = public_fallback(loc, radius, shown_ids, fc) if loc.get("lat") is not None else None
+    if govt and govt.get("name"):
+        govt["cap_ids"] = cap_ids
+        govt["listed_caps"] = [c for c in cap_ids
+                               if fc.levels_for(c).set_index("unique_id")["level"].get(govt["unique_id"], "NONE") != "NONE"]
     why = why_not(cap_ids, loc, radius, shown_ids, fc, out) if loc.get("lat") is not None and cap_ids else []
 
     plan_cards = cards or fb[:3]
@@ -267,6 +271,18 @@ _GOVT_SPECIALTY = re.compile(r"maternity|women|mahila|eye|dental|mental|psychiat
                              r"unani|leprosy|ent\b|children|child|paediatric|pediatric", re.I)
 
 
+def govt_line(g, lang="en"):
+    """Honest one-liner for the government fallback: does its record list any selected service? Never says confirmed."""
+    T = SLIP[lang]
+    by_id = caps.catalog()["by_id"]
+    name = (lambda c: SLIP["hi"]["capabilities"].get(c, by_id[c]["name"])) if lang == "hi" else (lambda c: by_id[c]["name"])
+    listed, wanted = g.get("listed_caps") or [], g.get("cap_ids") or []
+    if listed:
+        return T["govt_listed"].format(service=" + ".join(name(c) for c in listed))
+    return T["govt_not_listed"].format(service=" + ".join(name(c) for c in wanted) if wanted else
+                                       ("इस सेवा" if lang == "hi" else "this service"))
+
+
 def public_fallback(loc, radius, exclude, fc):
     fac = fc.facilities()
     pub = fac[(fac["operator_type"] == "public") & (fac["facility_type"].str.lower() == "hospital")
@@ -284,7 +300,7 @@ def public_fallback(loc, radius, exclude, fc):
                            np.where(~special & (pub["main_domain"] == "general"), 1, 2))
     best = pub.sort_values(["rank", "km"]).iloc[0]
     shown, tel, _ = phone_info({"phone": best.get("phone")}, best)
-    return {"name": best["name"], "km": float(best["km"]), "minutes": travel_min(best["km"]), "phone": shown, "tel": tel,
+    return {"unique_id": best["unique_id"], "name": best["name"], "km": float(best["km"]), "minutes": travel_min(best["km"]), "phone": shown, "tel": tel,
             "address": address(best), "lat": float(best["final_lat"]), "lon": float(best["final_lon"])}
 
 
@@ -373,7 +389,7 @@ def slip_text(view, typed, near_label, lang="en", need_label=None):
     lines.append("")
     if g and g.get("name"):
         phone = f"{T['phone']}: {g['phone']}" if g["phone"] else T["no_phone"]
-        lines.append(f"{T['if_none']} {g['name']} ({T['govt_note']}) — {phone} — {g['address']} — "
+        lines.append(f"{T['if_none']} {g['name']} — {govt_line(g, lang)} — {phone} — {g['address']} — "
                      f"{by_car(g['minutes'], lang)}")
     elif g:
         lines.append(T["no_govt"].format(km=g["none_within_km"]))
@@ -478,7 +494,8 @@ def family_targets(view):
     g = view.get("govt")
     if g and g.get("name"):
         out.append({"label": f"Government fallback: {g['name']}", "name": g["name"], "address": g["address"],
-                    "lat": g.get("lat"), "lon": g.get("lon"), "minutes": g["minutes"], "phone": g["phone"]})
+                    "lat": g.get("lat"), "lon": g.get("lon"), "minutes": g["minutes"], "phone": g["phone"],
+                    "govt": True, "cap_ids": g.get("cap_ids") or [], "listed_caps": g.get("listed_caps") or []})
     return out
 
 
@@ -508,6 +525,8 @@ def family_message(target, need, confirmed, sender, urgency, cap_ids, lang="en")
             lines.append(f"{T['map']}: https://maps.google.com/?q={float(target['lat']):.5f},{float(target['lon']):.5f}")
         lines.append(by_car(target["minutes"], lang))
         lines.append(f"{T['need']}: {need}")
+        if target.get("govt"):
+            lines.append(govt_line(target, lang))
         lines.append(T["confirmed_yes"] if confirmed else T["confirmed_no"])
         if target.get("phone"):
             lines.append(f"{T['hospital_phone']}: {target['phone']}" + (f" {DEMO_TAG[lang]}" if target.get("demo_phone") else ""))

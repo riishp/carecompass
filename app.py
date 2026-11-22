@@ -262,7 +262,7 @@ def call_plan(view, typed, where_label, need_label=None, ns=""):
         steps.append(f"<li>{'' if i == 0 else 'If no → '}{head}{body}</li>")
     g = view["govt"]
     if g and g.get("name"):
-        steps.append(f"<li>Last fallback: <b>{_html.escape(g['name'])}</b> — government, usually free; confirm on the call"
+        steps.append(f"<li>Last fallback: <b>{_html.escape(g['name'])}</b> — {_html.escape(ui.govt_line(g))}"
                      + (f" — {_html.escape(g['phone'])}" if g["phone"] else "") + f" ({ui.by_car(g['minutes'])})</li>")
     elif g:
         steps.append(f"<li>Last fallback: no government hospital in our data within {g['none_within_km']} km — "

@@ -133,3 +133,26 @@ def test_travel_time_is_labelled_as_estimate(minutes):
     t = {"name": "X Hospital", "address": "Patna", "lat": 25.6, "lon": 85.1, "minutes": minutes, "phone": None}
     assert "(estimated)" in ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], "en")
     assert "(अनुमान)" in ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], "hi")
+
+
+def test_government_line_is_honest_en_hi():
+    g = {"cap_ids": ["dialysis"], "listed_caps": ["dialysis"]}
+    assert ui.govt_line(g, "en") == "Government hospital, usually free. Lists Dialysis, not confirmed. Call first."
+    assert "डायलिसिस" in ui.govt_line(g, "hi") and "पुष्टि नहीं" in ui.govt_line(g, "hi")
+    g["listed_caps"] = []
+    assert ui.govt_line(g, "en") == ("Government hospital, usually free. Not confirmed for Dialysis. "
+                                     "Ask if they offer it or can refer you.")
+    for lang in ("en", "hi"):
+        assert "confirm on the call" not in ui.govt_line(g, lang)
+    t = {"name": "Sadar Hospital", "address": "Patna", "lat": 25.6, "lon": 85.1, "minutes": 20, "phone": None,
+         "govt": True, "cap_ids": ["dialysis"], "listed_caps": []}
+    assert "Not confirmed for Dialysis" in ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], "en")
+
+
+@pytest.mark.parametrize("dm,expected", [("STRONG", ("ok", "In government hospital directory")),
+                                         ("UNVERIFIED", ("warn", "Government directory match unverified")),
+                                         ("NONE", None), ("WEAK", None), ("PROBABLE", None)])
+def test_directory_chip_only_on_match(dm, expected):
+    row = {"location_source": "", "location_confidence": "high", "directory_match": dm, "operator_type": "private"}
+    chips = [c for c in ui.trust_chips({"phone": None}, row, "planned", None) if "directory" in c[1].lower()]
+    assert chips == ([expected] if expected else [])
