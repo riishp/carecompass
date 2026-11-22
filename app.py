@@ -511,7 +511,7 @@ with find_tab:
     s = sel()
     with st.expander("How to use"):
         st.markdown("1. **Describe the need** — a problem (*broken arm*, *chest pain*) or a service (*X-ray*, *dialysis*).\n"
-                    "2. **Pick services** from the suggestions. A facility must offer every service you pick.\n"
+                    "2. **Pick services** from the suggestions.\n"
                     "3. **Say where the patient is**, then **call in order** and **send the slip** to the family.")
     qp = st.query_params
     if qp.get("need") and not st.session_state.get("qp_done"):        # shareable link: ?need=xray,ct_scan&where=Patna
