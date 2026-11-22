@@ -463,7 +463,7 @@ def render_results(out, typed_location, typed_need, on_change_place, need_label=
     if view["why_not"]:
         with st.expander("Why not these?"):
             for w in view["why_not"]:
-                st.markdown(f"- **{_html.escape(w['name'])}** (~{w['minutes']} min) — {_html.escape(w['reason'])}"
+                st.markdown(f"- **{_html.escape(w['name'])}** (~{w['minutes']} min by car, estimated) — {_html.escape(w['reason'])}"
                             + ("".join(f"; {_html.escape(m.lower())}" for m in w["more"])))
     how = out.get("how_we_decided") or {}
     with st.expander("How we decided"):

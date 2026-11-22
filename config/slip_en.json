@@ -6,7 +6,7 @@
  "call_order": "Call in this order — confirm before going:",
  "phone": "Phone",
  "no_phone": "No phone number listed",
- "by_car": "about {min} min by car",
+ "by_car": "~{min} min by car (estimated)",
  "confirm": "confirm before going",
  "if_none": "If none can help:",
  "govt_note": "government, usually free; confirm on the call",
@@ -14,7 +14,7 @@
  "bring": "Bring:",
  "emergency": "If the patient gets worse, call 108 now.",
  "footer": "Services are self-reported. Always call before travelling.",
- "by_car_short": "under 5 min by car",
+ "by_car_short": "under 5 min by car (estimated)",
  "family": {
   "title": "CareCompass: please take the patient to",
   "map": "Map",

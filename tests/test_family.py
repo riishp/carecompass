@@ -124,3 +124,12 @@ def test_local_demo_file_wins_and_is_gitignored():
     committed = json.loads((cfg / "demo_phone.json").read_text())
     assert committed["enabled"] is False and committed["phone_display"] == "" and committed["tel"] == ""
     assert "config/demo_phone.local.json" in (cfg.parent / ".gitignore").read_text().splitlines()
+
+
+@pytest.mark.parametrize("minutes", [3, 25])
+def test_travel_time_is_labelled_as_estimate(minutes):
+    assert ui.by_car(minutes, "en").endswith("(estimated)")
+    assert ui.by_car(minutes, "hi").endswith("(अनुमान)")
+    t = {"name": "X Hospital", "address": "Patna", "lat": 25.6, "lon": 85.1, "minutes": minutes, "phone": None}
+    assert "(estimated)" in ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], "en")
+    assert "(अनुमान)" in ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], "hi")

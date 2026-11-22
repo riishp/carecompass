@@ -26,6 +26,8 @@ Confidently wrong answers fell from 81 to 1. "Correct" fell because typos now ge
 
 **The top 3 users see** (`tests/model_eval_top3.py`, 40 random districts × 10 services; share of checkable picks the government directory confirms): Current **74%** (39/53) · Model 1 57% (30/53) · Model 2 59% (44/75) · Combined 60% (46/77).
 
+Our hand-tuned evidence rules are strict: for C-section they find evidence for only 10% of hospitals the government directory lists, versus 73% for Model 1. We favour fewer, better-supported picks and rely on the call plan and government fallback to cover the gap.
+
 The combined model scores individual facilities best, but the current ranking gives the most practical top 3 because it also weighs distance, so the app ships the current ranking and shows the model labels as signals. Caveats: only ~5% of picks can be checked against the directory, the directory lists coarse departments only, and both models learned from that same directory, so these comparisons are suggestive, not conclusive.
 
 ## What we recommend to Virtue Foundation
@@ -65,6 +67,15 @@ DATABRICKS_CONFIG_PROFILE=datathon DATABRICKS_WAREHOUSE_ID=<sql-warehouse-id> .v
 ### Deploy as a Databricks App
 
 `tools/deploy.sh` syncs the engine from `notebooks/06_recommend.py`, uploads the app and deploys it. It assumes the profile `datathon`, an app named `carecompass` and the workspace path `/Workspace/Shared/Datathon 2026/app`, so edit those first. The app must be running before you deploy.
+
+## Limitations
+
+- Facility data is self-reported. Every result says to call first.
+- Distances are straight-line, and travel times are estimates from distance.
+- Ranking weights are hand-set (sensitivity tested: ±20% weights keep ~73% of top-3s).
+- Strict evidence rules miss some providers.
+- Under 5% of picks can be checked against the government directory.
+- Hindi template text is machine-translated.
 
 ## Notes
 

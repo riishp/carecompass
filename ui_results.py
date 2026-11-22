@@ -249,7 +249,7 @@ def build_view(out, fc):
         plan_cards[0]["demo_phone"] = True
     if plan_cards:
         far = max(c["minutes"] for c in plan_cards)
-        summary = (f"{len(plan_cards)} option{'s' if len(plan_cards) != 1 else ''} within ~{far} min by car. "
+        summary = (f"{len(plan_cards)} option{'s' if len(plan_cards) != 1 else ''} within ~{far} min by car (estimated). "
                    f"Call {plan_cards[0]['name']} first: {_reason_phrase(plan_cards[0])}.")
         if not cards:
             summary = "No facility nearby clearly lists this. " + summary + " None of these is confirmed — ask before going."
