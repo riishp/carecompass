@@ -7,9 +7,33 @@ A Streamlit app that helps a health coordinator in India find care for a patient
 - a referral slip in English or Hindi
 - a "Tell the family" WhatsApp message
 
-It was built for the Databricks DAIS 2026 datathon on Virtue Foundation Indian healthcare facility data.
+It was built for the CMU Datathon Fall 2026 (CMU Data Science Club × Databricks) on Virtue Foundation Indian healthcare facility data.
 
 See [OVERVIEW.md](OVERVIEW.md) for features and a code map, [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) for the system design, and [CLEANING_README.md](CLEANING_README.md) for the data pipeline.
+
+## Results
+
+**Location understanding** (`tests/location_eval.py`, 1,517 generated inputs: district names, typos, old names, PINs, states, "Town, State"):
+
+| | Correct | Asked to clarify | Confidently wrong | Not found |
+|---|---|---|---|---|
+| Before | 1,309 | 10 | **81** | 117 |
+| After | 1,156 | 358 | **1** | 2 |
+
+Confidently wrong answers fell from 81 to 1. "Correct" fell because typos now get a "did you mean…?" question instead of a silent guess.
+
+**Scoring facilities** (`tests/model_eval.py`, 241 hospitals matched to the government directory × 27 services, average AUC, 0.5 = coin flip): Current 0.60 · Model 1 0.62 · Model 2 0.66 · Combined 0.67.
+
+**The top 3 users see** (`tests/model_eval_top3.py`, 40 random districts × 10 services; share of checkable picks the government directory confirms): Current **74%** (39/53) · Model 1 57% (30/53) · Model 2 59% (44/75) · Combined 60% (46/77).
+
+The combined model scores individual facilities best, but the current ranking gives the most practical top 3 because it also weighs distance, so the app ships the current ranking and shows the model labels as signals. Caveats: only ~5% of picks can be checked against the directory, the directory lists coarse departments only, and both models learned from that same directory, so these comparisons are suggestive, not conclusive.
+
+## What we recommend to Virtue Foundation
+
+1. **Build verification into the workflow.** Coordinators already call facilities before sending patients. Record each call's outcome (confirmed / not offered / no answer) and feed it back into the data. That's the only way to get real ground truth.
+2. **Collect branch-specific, structured service data.** Many records share identical template sentences (one appears in ~489 facilities), so chain-wide or directory text is mistaken for what a single branch offers. Ask for per-branch service lists with concrete details (equipment, counts, hours).
+3. **Don't let websites decide who looks capable.** Public hospitals rarely publish detailed websites, so text-based scoring underrates free government care. Use government service standards (IPHS / First Referral Unit status) as a baseline and confirm by phone.
+4. **Fix location data at the source.** Filler coordinates, swapped lat/lon and wrong district labels are common in the source data; validating coordinates against PIN code areas would prevent patients being routed to the wrong region.
 
 ## What you need to run it
 
@@ -46,4 +70,6 @@ DATABRICKS_CONFIG_PROFILE=datathon DATABRICKS_WAREHOUSE_ID=<sql-warehouse-id> .v
 
 - **Where to edit the engine:** `engine/recommend_engine.py` is generated from `notebooks/06_recommend.py`. Edit the notebook, not the generated file.
 - **Facility data is self-reported** and may be wrong. Always confirm by phone before a patient travels.
-- **Demo phone number:** `config/demo_phone.json` can make every "Call first" show one demo number. It is off by default.
+- **App tabs:** **Find care** is the product. **Model 1**, **Model 2** and **Combined** re-rank the same search with each model, for comparison.
+- **Notebooks:** `notebooks/` holds every notebook the pipeline (`00_Full_Cleaning_Pipeline` and its 8 steps), the engine (`03b`, `04`, `05`, `06_recommend`, `09b`) and the models (`model1_evidence_levels.py`, `model1_all_services.py`, `model2_facility_capability.py`) depend on. Not included: the government-directory matching step, which a teammate did outside the workspace (`09b_Gold_Verified` reads its output CSV, `gold_facility_search_directory_verified.csv`), and exploratory notebooks the app doesn't use (`01_Verify_Virtue_Dataset`, `02_Facilities_EDA`, `06_07_Recommend_Google_Driving_Combined`).
+- **Demo phone number:** if `config/demo_phone.local.json` exists (it is gitignored), every "Call first" shows its number, labelled "Demo number". Otherwise the app reads `config/demo_phone.json`, which is off, and shows real numbers from the data.

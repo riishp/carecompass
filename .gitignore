@@ -5,3 +5,4 @@ __pycache__/
 .DS_Store
 .env
 .databrickscfg
+config/demo_phone.local.json

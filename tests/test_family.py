@@ -1,6 +1,7 @@
 """'Tell the family' WhatsApp message — pure Python, no Databricks.  Run: .venv/bin/python -m pytest tests/test_family.py -q"""
 import ast
 import builtins
+import json
 import re
 import sys
 from pathlib import Path
@@ -104,3 +105,22 @@ def test_clear_callback_wipes_fields(monkeypatch):
     exec(ast.get_source_segment(src, fn), ns)
     ns["_clear_family"](["x_fam_num", "x_fam_from"])
     assert fake == {"x_fam_num": "", "x_fam_from": ""}
+
+
+def test_demo_number_is_labelled_in_slip_and_family_message():
+    t = {"name": "X Hospital", "address": "Patna", "lat": 25.6, "lon": 85.1, "minutes": 10, "phone": "+1 202 555 0143",
+         "demo_phone": True}
+    for lang in ("en", "hi"):
+        msg = ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], lang)
+        assert ui.DEMO_TAG[lang] in msg
+    t["demo_phone"] = False
+    assert ui.DEMO_TAG["en"] not in ui.family_message(t, "Dialysis", False, "", "recurring", ["dialysis"], "en")
+
+
+def test_local_demo_file_wins_and_is_gitignored():
+    cfg = Path(ui.__file__).parent / "config"
+    if (cfg / "demo_phone.local.json").exists():
+        assert ui._DEMO_FILE.name == "demo_phone.local.json"
+    committed = json.loads((cfg / "demo_phone.json").read_text())
+    assert committed["enabled"] is False and committed["phone_display"] == "" and committed["tel"] == ""
+    assert "config/demo_phone.local.json" in (cfg.parent / ".gitignore").read_text().splitlines()

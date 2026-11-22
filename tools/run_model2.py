@@ -1,7 +1,7 @@
 """Run the team's 'Model 2 - Facility Capability' notebook LOCALLY (pandas/sklearn, no Databricks compute), on top of
 Model 1's output, and store the result for the app's Model 2 / Combined tabs.
 
-Usage: .venv/bin/python tools/run_model2.py <notebook.py> <gold_facility_search_services.csv> <hospital_directory.csv>
+Usage: .venv/bin/python tools/run_model2.py notebooks/model2_facility_capability.py <gold_facility_search_services.csv> <hospital_directory.csv>
 The notebook's code runs unchanged; Model 1's results come from catalog/model1_levels.csv (tools/run_model1.py).
 Writes catalog/model2_capability.parquet."""
 import sys

@@ -37,7 +37,7 @@ gold_csv, dir_csv = sys.argv[1:3]
 
 # ---- Model 2's code, unchanged (for its features, answer key and lookup)
 m2 = {"__name__": "m2", "display": lambda *a, **k: None}
-for c in (ROOT / "Model 2 - Facility Capability.py").read_text().split("# COMMAND ----------"):
+for c in (ROOT / "notebooks" / "model2_facility_capability.py").read_text().split("# COMMAND ----------"):
     code = "\n".join(l for l in c.splitlines() if not l.startswith("# MAGIC"))
     if code.strip() and not any(k in code for k in ("spark.table", "result = run(", "fac = pd.read_csv(GOLD", "saveAsTable")):
         exec(compile(code, "model2", "exec"), m2)

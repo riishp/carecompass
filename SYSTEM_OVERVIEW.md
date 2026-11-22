@@ -1,6 +1,9 @@
+> Earlier design notes written mid-datathon. See OVERVIEW.md for the final system.
+
+
 # CareCompass: full system overview (for ideation)
 
-> **Context for the reader:** this describes a datathon project (Databricks Data + AI Summit 2026 datathon, Virtue Foundation dataset on Indian healthcare facilities). It covers what the product does, how every part works, the code structure, the real numbers, and the known weaknesses. The goal of sharing it is to **brainstorm improvements**. A list of open questions is at the end.
+> **Context for the reader:** this describes a datathon project (CMU Datathon Fall 2026 (CMU Data Science Club × Databricks), Virtue Foundation dataset on Indian healthcare facilities). It covers what the product does, how every part works, the code structure, the real numbers, and the known weaknesses. The goal of sharing it is to **brainstorm improvements**. A list of open questions is at the end.
 >
 > Snapshot as of 2026-11-21. The service-evidence notebooks (03b/04/05/06) and the government-data comparison are still being edited by teammates. Their behaviour below is as last read.
 

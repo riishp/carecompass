@@ -18,7 +18,10 @@ CFG = Path(__file__).resolve().parent / "config"
 CHECKLISTS = json.loads((CFG / "call_checklists.json").read_text())
 BRING = json.loads((CFG / "what_to_bring.json").read_text())
 SLIP = {"en": json.loads((CFG / "slip_en.json").read_text()), "hi": json.loads((CFG / "slip_hi.json").read_text())}
-DEMO_PHONE = json.loads((CFG / "demo_phone.json").read_text()) if (CFG / "demo_phone.json").exists() else {}
+# DEMO ONLY: config/demo_phone.local.json (gitignored, never on GitHub) wins over the committed demo_phone.json (off).
+_DEMO_FILE = next((f for f in (CFG / "demo_phone.local.json", CFG / "demo_phone.json") if f.exists()), None)
+DEMO_PHONE = json.loads(_DEMO_FILE.read_text()) if _DEMO_FILE else {}
+DEMO_TAG = {"en": "(demo number)", "hi": "(डेमो नंबर)"}
 
 CAR_DETOUR, CAR_KMH = 1.4, 40.0                       # same assumptions as travel_times v1
 LEVEL_FROM_TIER = {"strong": "SPECIFIC", "moderate": "LISTED", "weak": "PASSING"}
@@ -243,6 +246,7 @@ def build_view(out, fc):
     plan_cards = cards or fb[:3]
     if DEMO_PHONE.get("enabled") and plan_cards:            # DEMO ONLY — see config/demo_phone.json
         plan_cards[0]["phone"], plan_cards[0]["tel"] = DEMO_PHONE["phone_display"], DEMO_PHONE["tel"]
+        plan_cards[0]["demo_phone"] = True
     if plan_cards:
         far = max(c["minutes"] for c in plan_cards)
         summary = (f"{len(plan_cards)} option{'s' if len(plan_cards) != 1 else ''} within ~{far} min by car. "
@@ -363,7 +367,7 @@ def slip_text(view, typed, near_label, lang="en", need_label=None):
         lines += [T["emergency"], ""]
     lines.append(T["call_order"])
     for c in view["plan"]:
-        phone = f"{T['phone']}: {c['phone']}" if c["phone"] else T["no_phone"]
+        phone = (f"{T['phone']}: {c['phone']}" + (f" {DEMO_TAG[lang]}" if c.get("demo_phone") else "")) if c["phone"] else T["no_phone"]
         lines.append(f"{c['n']}. {c['name']} — {phone} — {c['address']} — {by_car(c['minutes'], lang)} — {T['confirm']}")
     g = view["govt"]
     lines.append("")
@@ -469,7 +473,8 @@ def normalise_whatsapp(raw):
 def family_targets(view):
     """The 3 call-plan facilities + the government fallback, in call order."""
     out = [{"label": f"{c['role']}: {c['name']}", "name": c["name"], "address": c["address"], "lat": c.get("lat"),
-            "lon": c.get("lon"), "minutes": c["minutes"], "phone": c["phone"]} for c in view["plan"]]
+            "lon": c.get("lon"), "minutes": c["minutes"], "phone": c["phone"], "demo_phone": c.get("demo_phone", False)}
+           for c in view["plan"]]
     g = view.get("govt")
     if g and g.get("name"):
         out.append({"label": f"Government fallback: {g['name']}", "name": g["name"], "address": g["address"],
@@ -505,7 +510,7 @@ def family_message(target, need, confirmed, sender, urgency, cap_ids, lang="en")
         lines.append(f"{T['need']}: {need}")
         lines.append(T["confirmed_yes"] if confirmed else T["confirmed_no"])
         if target.get("phone"):
-            lines.append(f"{T['hospital_phone']}: {target['phone']}")
+            lines.append(f"{T['hospital_phone']}: {target['phone']}" + (f" {DEMO_TAG[lang]}" if target.get("demo_phone") else ""))
         if items:
             lines.append(f"{T['please_bring']}: " + ", ".join(items))
         if urgency == "emergency":

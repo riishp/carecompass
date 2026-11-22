@@ -103,6 +103,7 @@ html {font-size: 18px;}
 .cc-level {font-size:1.12rem; font-weight:700;}
 [class*="st-key-call_"] a {background:#C62828 !important; color:#FFFFFF !important; border-color:#C62828 !important;
                            font-weight:700; font-size:1.05rem;}
+.cc-demo {display:inline-block; background:#FFF4D6; color:#7A5A00; border:1px solid #E8C766; border-radius:4px; padding:0 6px; font-size:.75rem; font-weight:600;}
 .cc-chip {display:inline-block; border:1px solid #CBD3E1; border-radius:999px; padding:2px 10px; margin:3px 5px 3px 0;
           font-size:.9rem; background:#FFFFFF;}
 .cc-quote {border-left:3px solid #9AA8C2; padding-left:.7rem; margin:.4rem 0; font-size:1.05rem;}
@@ -244,7 +245,8 @@ def call_plan(view, typed, where_label, need_label=None, ns=""):
     steps = []
     first_qs = plan[0]["questions"]
     for i, c in enumerate(plan):
-        head = f"Call #{i + 1}: <b>{_html.escape(c['name'])}</b>" + (f" — {_html.escape(c['phone'])}" if c["phone"] else " — no phone listed")
+        head = f"Call #{i + 1}: <b>{_html.escape(c['name'])}</b>" + (f" — {_html.escape(c['phone'])}" + (" <span class='cc-demo'>Demo number</span>" if c.get("demo_phone") else "")
+                                                         if c["phone"] else " — no phone listed")
         if i == 0:
             body = "<br><span class='cc-muted'>Ask:</span><ul>" + "".join(f"<li>{_html.escape(q)}</li>" for q in first_qs) + "</ul>"
         else:
@@ -325,6 +327,9 @@ def result_card(c, compact=False, key=""):
             if c["tel"] and c["phone"]:
                 with st.container(key=f"call_{key}"):
                     st.link_button(f"📞 Call {c['phone']}", c["tel"], width="stretch")
+                if c.get("demo_phone"):
+                    st.markdown("<span class='cc-demo'>Demo number</span> <span class='cc-muted'>not this facility's real "
+                                "number</span>", unsafe_allow_html=True)
             else:
                 st.markdown("<span class='cc-muted'>No phone number listed</span>", unsafe_allow_html=True)
             if c["questions"]:
