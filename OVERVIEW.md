@@ -16,8 +16,8 @@ The app opens on one view, Find care. Model 1, Model 2 and Combined were built a
 ### A search, step by step (Find care)
 1. **Need** — type-ahead (`streamlit-searchbox`): conditions ("broken arm", "chest pain") or services ("X-ray"). Conditions add their top services as chips; related ones are offered as "also consider". No local match → "Ask AI" (Llama picks from the catalog only). Emergencies show the red 108 banner; self-harm phrases show the Tele-MANAS 14416 helpline.
 2. **Where are you?** — village, town, district, PIN, "lat, lon", or "Place, State". Ambiguous names ask (e.g. Aurangabad → Bihar or Maharashtra); a state asks which district; typos are offered, never guessed.
-3. **Results**: 108 banner (emergencies) → "Showing results near X — change place" → **call plan** (call #1 with questions → #2 → #3 → government fallback) → Hindi toggle, Copy slip, WhatsApp → numbered **map** → **cards** (call first/second/third: name, red Call button, travel time, evidence label, "What to ask" dropdown; "More details" = trust checks, quoted evidence, location note) → "Nothing better nearby" → **Why not these?** (real reasons only) → **How we decided** (rules + ranking factors).
-4. Classic free-text search is kept in an expander at the bottom (original `recommend()`).
+3. **Results**: 108 banner (emergencies) → "Showing results near X — change place" → **call plan** (call #1 with questions → #2 → #3 → government fallback) → Hindi toggle, Copy slip, WhatsApp → numbered **map** → **cards** (call first/second/third: name, red Call button, travel time, evidence label, "What to ask" dropdown; "More details" = trust checks, quoted evidence, location note) → "Nothing better nearby" → (Judge view only) **Why not these?** (real reasons only) → **How we decided** (rules + ranking factors).
+4. The classic free-text search expander was removed from the UI; its code (original `recommend()`) is kept.
 
 **Demo setting**: `config/demo_phone.json` can make every "Call first" show one demo number (`"enabled": true`, plus `phone_display` and `tel`). It is off: real numbers from the data are shown.
 

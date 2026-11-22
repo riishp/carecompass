@@ -44,9 +44,8 @@ LOGO = """<svg width="58" height="58" viewBox="0 0 64 64" role="img" aria-label=
 </svg>"""
 # Model 1 / Model 2 / Combined comparison tabs: hidden unless the "Judge view" toggle (top-right corner) is on
 with st.container(key="judge"):
-    SHOW_MODEL_TABS = st.toggle("Judge view", key="judge_view", help="Show the Model 1 / Model 2 / Combined comparison tabs")
-st.markdown(f"""<div class="cc-brand">{LOGO}<div><div class="cc-brand-name">CareCompass</div>
-<div class="cc-brand-tag">Find who can treat the patient — then call in order.</div></div></div>""",
+    SHOW_MODEL_TABS = st.toggle("Judge view", key="judge_view", help="Show the reasoning behind results (Why not these?, How we decided) and the Model 1 / Model 2 / Combined tabs")
+st.markdown(f"""<div class="cc-brand">{LOGO}<div><div class="cc-brand-name">CareCompass</div></div></div>""",
             unsafe_allow_html=True)
 
 SHOW_EXTRA_TABS = False      # Care deserts + About the data are hidden (code kept); set True to show them again
@@ -82,7 +81,6 @@ html {font-size: 18px;}
 .st-key-judge {display:flex; flex-direction:row; justify-content:flex-end; margin-bottom:-1rem;}
 .cc-brand {display:flex; align-items:center; gap:.8rem; margin:.2rem 0 .6rem 0;}
 .cc-brand-name {font-size:2.1rem; font-weight:800; color:#1E2A4A; line-height:1.05;}
-.cc-brand-tag {font-size:.95rem; color:#55627A;}
 .cc-ask {font-size:2rem; font-weight:800; color:#1E2A4A; margin:1rem 0 .35rem 0; line-height:1.2;}
 .cc-help {font-size:.85rem; color:#5B6475; margin:.15rem 0 .4rem 0;}
 .st-key-where_input input {font-size:1.35rem; padding:.75rem .9rem;}
@@ -463,37 +461,38 @@ def render_results(out, typed_location, typed_need, on_change_place, need_label=
         st.markdown("##### Nothing better nearby — not confirmed" if view["cards"] else "##### Possible options — not confirmed")
         for i, c in enumerate(view["fallback_cards"]):
             result_card(c, compact=True, key=f"{ns}fb{i}")
-    if view["why_not"]:
-        with st.expander("Why not these?"):
-            for w in view["why_not"]:
-                st.markdown(f"- **{_html.escape(w['name'])}** (~{w['minutes']} min by car, estimated) — {_html.escape(w['reason'])}"
-                            + ("".join(f"; {_html.escape(m.lower())}" for m in w["more"])))
-    how = out.get("how_we_decided") or {}
-    with st.expander("How we decided"):
-        for k in ("service", "location", "matching"):
-            if how.get(k):
-                st.markdown(f"- {ui.plain(how[k])}")
-        urg = view["urgency"]
-        st.markdown("- " + {"emergency": "Treated as an emergency: closeness counts most.",
-                            "recurring": "Treated as regular, repeated care: closeness and evidence both count.",
-                            "planned": "Treated as planned care: how clearly a facility offers the service counts most."}[urg])
-        for w in how.get("widening") or []:
-            st.markdown(f"- {ui.plain(w)}")
-        st.markdown(f"- Searched within {view['radius']:.0f} km. Travel times are straight-line estimates "
-                    f"(road detour × 1.4 at 40 km/h).")
-        for n in out.get("search_notes") or []:
-            if n:
-                st.markdown(f"- {ui.plain(n)}")
-        if view["cards"]:
-            st.markdown("**Ranking factors (how we ordered results, not certainty)**")
-            st.dataframe(pd.DataFrame([{"#": c["n"], "Facility": c["name"],
-                                        "Offers the service": c["components"].get("evidence"),
-                                        "Close to you": c["components"].get("access"),
-                                        "Staff & capacity": c["components"].get("readiness"),
-                                        "Verifiable details": c["components"].get("trust")} for c in view["cards"]]),
-                         hide_index=True, width="stretch",
-                         column_config={k: st.column_config.ProgressColumn(k, min_value=0, max_value=1, format="%.2f")
-                                        for k in ["Offers the service", "Close to you", "Staff & capacity", "Verifiable details"]})
+    if SHOW_MODEL_TABS:                     # Judge view only: the reasoning behind the results
+        if view["why_not"]:
+            with st.expander("Why not these?"):
+                for w in view["why_not"]:
+                    st.markdown(f"- **{_html.escape(w['name'])}** (~{w['minutes']} min by car, estimated) — {_html.escape(w['reason'])}"
+                                + ("".join(f"; {_html.escape(m.lower())}" for m in w["more"])))
+        how = out.get("how_we_decided") or {}
+        with st.expander("How we decided"):
+            for k in ("service", "location", "matching"):
+                if how.get(k):
+                    st.markdown(f"- {ui.plain(how[k])}")
+            urg = view["urgency"]
+            st.markdown("- " + {"emergency": "Treated as an emergency: closeness counts most.",
+                                "recurring": "Treated as regular, repeated care: closeness and evidence both count.",
+                                "planned": "Treated as planned care: how clearly a facility offers the service counts most."}[urg])
+            for w in how.get("widening") or []:
+                st.markdown(f"- {ui.plain(w)}")
+            st.markdown(f"- Searched within {view['radius']:.0f} km. Travel times are straight-line estimates "
+                        f"(road detour × 1.4 at 40 km/h).")
+            for n in out.get("search_notes") or []:
+                if n:
+                    st.markdown(f"- {ui.plain(n)}")
+            if view["cards"]:
+                st.markdown("**Ranking factors (how we ordered results, not certainty)**")
+                st.dataframe(pd.DataFrame([{"#": c["n"], "Facility": c["name"],
+                                            "Offers the service": c["components"].get("evidence"),
+                                            "Close to you": c["components"].get("access"),
+                                            "Staff & capacity": c["components"].get("readiness"),
+                                            "Verifiable details": c["components"].get("trust")} for c in view["cards"]]),
+                             hide_index=True, width="stretch",
+                             column_config={k: st.column_config.ProgressColumn(k, min_value=0, max_value=1, format="%.2f")
+                                            for k in ["Offers the service", "Close to you", "Staff & capacity", "Verifiable details"]})
 
 
 def searching(steps_fn):
@@ -618,15 +617,7 @@ with find_tab:
         if out is not None:
             render_results(out, q["location"], q.get("from"), _relocate)
 
-    with st.expander("Can't find it? Describe the need in your own words (classic search)"):
-        with st.form("search"):
-            need = st.text_input("What does the patient need?", placeholder="e.g. dialysis, c-section, heart surgery")
-            where2 = st.text_input("Where is the patient?", placeholder="Village, town, district or PIN")
-            if st.form_submit_button("Search", type="primary"):
-                if not need.strip() or not where2.strip():
-                    st.warning("Please fill in both what the patient needs and where they are.")
-                else:
-                    start_search(need, where2)
+    # Classic free-text search expander removed from the UI; start_search()/run_recommend() (recommend()) are kept.
     if q and q.get("mode") == "classic":
         def _steps_c(stt, q=q):
             stt.update(label="Finding the place and facilities…")
