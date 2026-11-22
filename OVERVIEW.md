@@ -9,12 +9,7 @@
 A coordinator types **what the patient needs** and **where they are**, and gets a **call plan**: three facilities to call in order, what to ask each, a government fallback, and a referral slip to send the family.
 
 ### Tabs
-| Tab | What it is |
-|---|---|
-| **Find care** | The original algorithm. You search here. |
-| **Model 1** | The same search re-ranked by the team's *Model 1 — evidence levels* (how strongly the record's wording backs the claim). |
-| **Model 2** | The same search re-ranked by *Model 2 — facility capability* (is this the *kind* of facility that runs it — size, staff, type). Only facilities that mention the service. |
-| **Combined** | The same search re-ranked by the combined *finder label* (Model 1 level × Model 2 band: Strong match / Good match / Call to confirm / Conflict…). |
+The app has one view, Find care. Model 1, Model 2 and Combined were built and evaluated (see Results) but are hidden in the app (`SHOW_MODEL_TABS = False` in `app.py`).
 
 *Care deserts* and *About the data* are hidden (`SHOW_EXTRA_TABS = False` in `app.py`; code kept, not executed).
 
@@ -56,7 +51,7 @@ Built by the cleaning pipeline (`00_Full_Cleaning_Pipeline`, 8 steps): raw → B
 ### How ranking works (Find care)
 Candidates = facilities that list every selected service within the service's distance limit (widened 1.5× / 3× if fewer than 3). Score = evidence + access (distance & location uncertainty) + readiness (type, doctors, beds) + trust (phone, website, location certainty, not a merged record), weighted by urgency (emergency → closeness counts most). Top 3 = best overall, closest credible, strongest evidence. Passing-only mentions never become top picks.
 
-### How the model tabs rank
+### How the models rank (hidden in the app)
 | Version | Rule |
 |---|---|
 | Model 1 | best evidence level (Specific > Listed), then nearest, then directory-confirm % |

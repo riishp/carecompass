@@ -70,6 +70,6 @@ DATABRICKS_CONFIG_PROFILE=datathon DATABRICKS_WAREHOUSE_ID=<sql-warehouse-id> .v
 
 - **Where to edit the engine:** `engine/recommend_engine.py` is generated from `notebooks/06_recommend.py`. Edit the notebook, not the generated file.
 - **Facility data is self-reported** and may be wrong. Always confirm by phone before a patient travels.
-- **App tabs:** **Find care** is the product. **Model 1**, **Model 2** and **Combined** re-rank the same search with each model, for comparison.
+- **App tabs:** The app has one view, Find care. Model 1, Model 2 and Combined were built and evaluated (see Results) but are hidden in the app (`SHOW_MODEL_TABS = False` in `app.py`).
 - **Notebooks:** `notebooks/` holds every notebook the pipeline (`00_Full_Cleaning_Pipeline` and its 8 steps), the engine (`03b`, `04`, `05`, `06_recommend`, `09b`) and the models (`model1_evidence_levels.py`, `model1_all_services.py`, `model2_facility_capability.py`) depend on. Not included: the government-directory matching step, which a teammate did outside the workspace (`09b_Gold_Verified` reads its output CSV, `gold_facility_search_directory_verified.csv`), and exploratory notebooks the app doesn't use (`01_Verify_Virtue_Dataset`, `02_Facilities_EDA`, `06_07_Recommend_Google_Driving_Combined`).
 - **Demo phone number:** if `config/demo_phone.local.json` exists (it is gitignored), every "Call first" shows its number, labelled "Demo number". Otherwise the app reads `config/demo_phone.json`, which is off, and shows real numbers from the data.

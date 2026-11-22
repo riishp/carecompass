@@ -47,10 +47,15 @@ st.markdown(f"""<div class="cc-brand">{LOGO}<div><div class="cc-brand-name">Care
             unsafe_allow_html=True)
 
 SHOW_EXTRA_TABS = False      # Care deserts + About the data are hidden (code kept); set True to show them again
-_tab_names = ["Find care", "Model 1", "Model 2", "Combined"] + (["Care deserts", "About the data"] if SHOW_EXTRA_TABS else [])
-_tabs = st.tabs(_tab_names)
-find_tab, m1_tab, m2_tab, combo_tab = _tabs[:4]
-desert_tab, about_tab = (_tabs[4], _tabs[5]) if SHOW_EXTRA_TABS else (None, None)
+SHOW_MODEL_TABS = False      # Model 1 / Model 2 / Combined comparison tabs are hidden (code kept)
+_tab_names = (["Find care"]
+              + (["Model 1", "Model 2", "Combined"] if SHOW_MODEL_TABS else [])
+              + (["Care deserts", "About the data"] if SHOW_EXTRA_TABS else []))
+_tabs = [st.container()] if len(_tab_names) == 1 else st.tabs(_tab_names)   # one view → no tab bar
+_by_name = dict(zip(_tab_names, _tabs))
+find_tab = _by_name["Find care"]
+m1_tab, m2_tab, combo_tab = (_by_name.get(n) for n in ("Model 1", "Model 2", "Combined"))
+desert_tab, about_tab = _by_name.get("Care deserts"), _by_name.get("About the data")
 
 # ───────────────────────────── Find care ─────────────────────────────
 # New path: type-ahead capability search (capabilities.py + engine/find_care.py, catalog/*.json).
@@ -681,9 +686,10 @@ def model_tab(tab, version):
         render_results(out, q["location"], q.get("from"), _relocate, ns=f"{version}_")
 
 
-model_tab(m1_tab, "model1")
-model_tab(m2_tab, "model2")
-model_tab(combo_tab, "combined")
+if SHOW_MODEL_TABS:
+    model_tab(m1_tab, "model1")
+    model_tab(m2_tab, "model2")
+    model_tab(combo_tab, "combined")
 
 # ───────────────────────────── Care deserts ─────────────────────────────
 NEED_FOR = {  # service -> (NFHS indicator, True if a higher value means more need)
